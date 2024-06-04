@@ -1,0 +1,93 @@
+#lottie-player-prop {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#btnHoverEffect :hover{
+    pointer-events: stroke;
+    background-color: #FF805E;
+}
+
+#rowApp{
+    background-color: #C0B6F3;
+    border-radius: 9px;
+    margin: auto;
+    padding: 3%;
+    width: 90%;
+}
+
+#rowApp p{
+    color: #172c45;
+}
+
+.circles{
+    margin-top: 50px;
+}
+
+.circles .c {
+    width: 24px;
+    height: 24px;
+    background: #D9D2FA;
+    display: inline-block;
+    border-radius: 50%;
+}
+.circles .c:nth-child(2) {
+    background: #FF4221;   
+}
+
+#footer p{
+    color: #172c45;
+}
+
+#footer p:hover{
+    color: #FF4221;
+    font-weight: bold;
+}
+
+#footer button{
+    background-color: #FF4221;
+    border: none;
+    color: white;
+}
+
+#header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+
+.add-shadow{
+    -webkit-box-shadow: 8px 0px 24px 0px rgba(66, 68, 90, 1);
+-moz-box-shadow: 8px 0px 24px 0px rgba(66, 68, 90, 1);
+box-shadow: 8px 0px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.navbar a{
+    color: #172c45;
+    text-decoration: none;
+}
+
+.navbar a :hover{
+    color: #FF4221;
+    font-weight: bold;
+}
+
+.navbar  li  a:hover{
+    color: #FF4221;
+    font-weight: bold;
+}
+
+.accordion a{
+    text-decoration: none;
+    color: #172c45;
+}
+
+.accordion-body a{
+    font-size: 14px;
+    color: #172c45;
+    font-weight: 600;
+}

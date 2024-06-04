@@ -1,0 +1,60 @@
+#lottie-player-prop {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#footer p{
+    color: #172c45;
+}
+
+#footer p:hover{
+    color: #FF4221;
+    font-weight: bold;
+}
+
+#footer button{
+    background-color: #FF4221;
+    border: none;
+    color: white;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a :hover{
+    color: #FF4221;
+    font-weight: bold;
+}
+
+.navbar  li  a:hover{
+    color: #FF4221;
+    font-weight: bold;
+}
+
+#header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.add-shadow{
+    -webkit-box-shadow: 8px 0px 24px 0px rgba(66, 68, 90, 1);
+-moz-box-shadow: 8px 0px 24px 0px rgba(66, 68, 90, 1);
+box-shadow: 8px 0px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.accordion a{
+    text-decoration: none;
+    color: #172c45;
+}
+
+.accordion-body a{
+    font-size: 14px;
+    color: #172c45;
+    font-weight: 600;
+}

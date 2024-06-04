@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akoljat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="stylesheet" href="style-firmy.css">
+</head>
+
+<body>
+
+    <!------------------------------WIDOK 0 NAVBAR ----------------------------------->
+
+    <nav class="navbar navbar-expand-lg pt-3 pb-3 d-none d-md-block" id="header" style="background-color: #f381be;">
+        <div class="container-fluid" style="color: black;">
+            <div class="row mx-auto" style="width: 70%;">
+                <div class="col-3">
+                    <a class="navbar-brand fw-bold fs-3" href="#">Akolja</a>
+                </div>
+                <div class="col-4 mx-auto">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" aria-current="page" href="#">Strona główna</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold me-1 ms-1" href="#">Dla szukających pracy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#" style="color: #FF4221; font-weight: bold;">Dla firm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="8" r="5"></circle>
+                        <path d="M8 14H12H16V21H8V14Z"></path>
+                    </svg>
+                    <a href="" class="fw-bold fs-6 mb-0 ms-1">
+                        <p class="mb-0">Moje konto</p>
+                    </a>
+                    <button class="ms-3 p-1 ps-3 pe-3 fw-bold"
+                        style="background-color: #F2F0FD; border-radius: 16px; border: none;">22 100 43 15</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- WIDOK 0 NAVBAR MOBILE -->
+
+    <div class="container-fluid d-block d-md-none pb-3 pt-3" style="background-color: #f2f0fd;" id="header">
+
+        <div class="row">
+            <div class="col-3 d-flex">
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample" style="background-color: unset; border: none;">
+                    <img src="assets/burger-bar.png" width="30px" class="ms-auto"/>
+                </a>
+                <p class="fw-bold align-self-center mb-0 mt-0 fs-2 ms-1">Akolja</p>
+            </div>
+
+            <div class="col-7 ms-auto me-1 d-flex">
+                <img src="assets/profile-user.png" class="align-self-center" width="30px" height="30px">
+                <a href="" class="ms-3 p-2 ps-3 pe-3 fw-bold" style="background-color: #C0B6F3; border-radius: 16px; border: none; text-decoration: none; color: #172C45;">22 100 43 15</a>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: #F2F0FD;">
+            <div class="row pt-3 pb-3" style="background-color: #C0B6F3;">
+                <div class="col-3 ms-2">
+                    <p class="fw-bold fs-2 ms-2 mb-0">Akolja</p>
+                </div>
+                <div class="col-2 ms-auto me-1">
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: unset; border: none;"><img src="assets/close.png" class="mt-auto" width="20px"/></button>
+                </div>
+            </div>
+            <div class="row p-3" style="background-color: white;">
+                <div class="col-6" >
+                    <a href="" style="text-decoration: none;">
+                        <p class="fw-bold mb-0" style="color: #172C45;">O nas</p>
+                    </a>
+                </div>
+                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                    <img src="assets/fast-forward.png" alt="" width="15px">
+                </div>
+            </div>
+            <div class="row p-3" style="background-color: white;">
+                <div class="col-6" >
+                    <a href="" style="text-decoration: none;">
+                        <p class="fw-bold mb-0" style="color: #172C45;">Dla szukających pracy</p>
+                    </a>
+                </div>
+                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                    <img src="assets/fast-forward.png" alt="" width="15px">
+                </div>
+            </div>
+
+            <div class="row p-3" style="background-color: white; border-radius: 15px;">
+                <div class="col-6" >
+                    <a href="" style="text-decoration: none;">
+                        <p class="fw-bold mb-0" style="color: #172C45;">Dla firm</p>
+                    </a>
+                </div>
+                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                    <img src="assets/fast-forward.png" alt="" width="15px">
+                </div>
+            </div>
+
+            <div class="row mt-2 p-3">
+                <a href="" style="text-decoration: none;">
+                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Kontakt dla firm</p>
+                </a>
+                <a href="" style="text-decoration: none;" class="mt-2">
+                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Kontakt dla pracownika</p>
+                </a>
+                <a href="" style="text-decoration: none;" class="mt-2">
+                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Moje konto</p>
+                </a>
+            </div>
+
+            <div class="flex-row d-flex mt-2 p-3">
+                <a href="">
+                    <img src="assets/facebook.png" width="30px">
+                </a>
+                <a href="" class="ms-2">
+                    <img src="assets/instagram.png" width="30px">
+                </a>
+                <a href="" class="ms-2">
+                    <img src="assets/linkedin.png" width="30px">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- WIDOK 1 ------------------------------------------>
+
+    <div class="container-fluid pt-5 d-none d-md-block" style="background-color: white; padding-bottom: 6%; color: #1d1d1b;">
+        <div class="row text-center">
+            <div class="col-10 col-md-4 ms-md-auto me-md-3">
+                <p class="fw-bold fs-6" style="color: #e6027d;">Dla firm</p>
+                <p class="fw-bold fs-1" style="line-height: 1.1em; color: #e6027d;">Agencja Pracy <br> Natychmiastowej™ <br>
+                    z aplikacją do zamawiania <br> pracowników</p>
+                <p class="fw-bold mb-0" style="margin-top: 12%; font-size: 16px;">
+                    <span id="lottie-player-prop">
+                        <dotlottie-player src="https://lottie.host/c4ca5db0-3c5d-4fa9-aab0-3c958afa4409/bplU500FmS.json"
+                            background="transparent" speed="1" style="width: 50px; height: 50px;" loop
+                            autoplay></dotlottie-player>
+                    </span>
+                    pracownicy gotowi do pracy w 48h
+                </p>
+                <p class="fw-bold" style="font-size: 16px;">
+                    <span id="lottie-player-prop">
+                        <dotlottie-player src="https://lottie.host/c4ca5db0-3c5d-4fa9-aab0-3c958afa4409/bplU500FmS.json"
+                            background="transparent" speed="1" style="width: 50px; height: 50px;" loop
+                            autoplay></dotlottie-player>
+                    </span>
+                    aplikacja z pulą >160 000 pracowników
+                </p>
+                <p class="fw-bold" style="font-size: 16px;">
+                    <span id="lottie-player-prop">
+                        <dotlottie-player src="https://lottie.host/c4ca5db0-3c5d-4fa9-aab0-3c958afa4409/bplU500FmS.json"
+                            background="transparent" speed="1" style="width: 50px; height: 50px;" loop
+                            autoplay></dotlottie-player>
+                    </span>
+                    redukcja kosztów zatrudnienia >20%
+                </p>
+                <p class="fw-bold" style="font-size: 16px;">
+                    <span id="lottie-player-prop">
+                        <dotlottie-player src="https://lottie.host/c4ca5db0-3c5d-4fa9-aab0-3c958afa4409/bplU500FmS.json"
+                            background="transparent" speed="1" style="width: 50px; height: 50px;" loop
+                            autoplay></dotlottie-player>
+                    </span>
+                    1 faktura za wszystkie zlecenia
+                </p>
+                <button class="btn text-white fw-bold mt-4"
+                    style="background-color: #e6027d; border-radius: 16px;">Potrzebuję pracowników</button>
+            </div>
+            <div class="col-10 col-md-4 me-md-auto me-md-3 text-center">
+                <img src="assets/telefon.jpg" width="300px">
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 1 MOBILE -->
+
+    <div class="container-fluid pt-5 d-block d-md-none" style="background-color: #172C45; padding-bottom: 6%;">
+        <div class="row text-center">
+            <p class="fw-bold fs-6 text-white">Dla firm</p>
+            <p class="fw-bold fs-1 text-white" style="line-height: 1.1em;">Agencja Pracy <br> Natychmiastowej™ <br>
+                z aplikacją do zamawiania <br> pracowników</p>
+            <p class="fw-bold text-white mb-0" style="margin-top: 12%; font-size: 16px;">
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/c4ca5db0-3c5d-4fa9-aab0-3c958afa4409/bplU500FmS.json"
+                        background="transparent" speed="1" style="width: 50px; height: 50px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                pracownicy gotowi do pracy w 48h
+            </p>
+            <p class="fw-bold text-white" style="font-size: 16px;">
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/c4ca5db0-3c5d-4fa9-aab0-3c958afa4409/bplU500FmS.json"
+                        background="transparent" speed="1" style="width: 50px; height: 50px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                aplikacja z pulą >160 000 pracowników
+            </p>
+            <p class="fw-bold text-white" style="font-size: 16px;">
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/c4ca5db0-3c5d-4fa9-aab0-3c958afa4409/bplU500FmS.json"
+                        background="transparent" speed="1" style="width: 50px; height: 50px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                redukcja kosztów zatrudnienia >20%
+            </p>
+            <p class="fw-bold text-white" style="font-size: 16px;">
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/c4ca5db0-3c5d-4fa9-aab0-3c958afa4409/bplU500FmS.json"
+                        background="transparent" speed="1" style="width: 50px; height: 50px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                1 faktura za wszystkie zlecenia
+            </p>
+            <button class="btn text-white fw-bold mt-4 mx-auto"
+                style="background-color: #FF4221; border-radius: 16px; width: 60%;">Potrzebuję pracowników</button>
+            <div class="row mt-5 pb-5">
+                <img src="assets/pracownicygodziny.png" width="600px">
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- WIDOK 2 ------------------------------------------>
+
+    <div class="container-fluid pt-5 pb-5 d-none d-md-block" style="background-color: #C0B6F3; color: #172C45;">
+        <div class="row text-center fs-1">
+            <p class="fw-bold fs-5">Co zyskują nasi klienci</p>
+            <p class="fw-bold" style="color: #172C45;">Cyfrowa platforma do zamawiania pracowników na<br> godziny</p>
+        </div>
+        <div class="row mt-5 mx-auto" style="width: 65%;">
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Pracownicy gotowi do pracy w <br> 48h</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Najwyższy rynkowo <br> współczynnik fill-rate</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">1 faktura zbiorcza miesięcznie <br> za wystawione zlecenia</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Brak opłat dodatkowych <br> i minimalnej liczby zleceń</p>
+            </div>
+        </div>
+        <div class="row mt-5 mx-auto" style="width: 65%;">
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Zamawianie pracowników za <br> pomocą 3 kliknięć</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Zero papierologii,<br>pełna obsługa online</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Pełne raportowanie <br>w Business Intelligence</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Dostępność pracowników <br> i obsługi 24/7</p>
+            </div>
+            <div class="row text-center">
+                <div class="col mt-5">
+                    <button class="btn text-white fw-bold"
+                        style="background-color: #FF4221; border-radius: 16px;">Zapytaj o ofertę</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 2 MOBILE -->
+
+    <div class="container-fluid pt-5 pb-5 d-block d-md-none" style="background-color: #C0B6F3; color: #172C45;">
+        <div class="row text-center fs-1">
+            <p class="fw-bold fs-5">Co zyskują nasi klienci</p>
+            <p class="fw-bold" style="color: #172C45;">Cyfrowa platforma do zamawiania pracowników na<br> godziny</p>
+        </div>
+        <div class="row mt-5 mx-auto" style="width: 95%;">
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Pracownicy gotowi do pracy w <br> 48h</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Najwyższy rynkowo <br> współczynnik fill-rate</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">1 faktura zbiorcza miesięcznie <br> za wystawione zlecenia</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Brak opłat dodatkowych <br> i minimalnej liczby zleceń</p>
+            </div>
+        </div>
+        <div class="row mt-5 mx-auto" style="width: 95%;">
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Zamawianie pracowników za <br> pomocą 3 kliknięć</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Zero papierologii,<br>pełna obsługa online</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Pełne raportowanie <br>w Business Intelligence</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="120px">
+                <p class="fw-bold mt-2">Dostępność pracowników <br> i obsługi 24/7</p>
+            </div>
+            <div class="row text-center">
+                <div class="col mt-5">
+                    <button class="btn text-white fw-bold"
+                        style="background-color: #FF4221; border-radius: 16px;">Zapytaj o ofertę</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- WIDOK 3 ------------------------------------------>
+
+
+    <div class="container-fluid pt-5 pb-5 d-none d-md-block" style="background-color: #F2F0FD; color: #172C45;">
+        <div class="row mx-auto text-center" style="background-color: #C0B6F3; width: 60%; border-radius: 16px;">
+            <div class="col-6">
+                <p class="fw-bold fs-5 mt-5">Czym jest Tikrow?</p>
+                <p class="fw-bold fs-1 mt-3">Pracownicy na godziny <br>w aplikacji</p>
+                <p class="fw-medium fs-5 mt-5">W Akolja łączymy firmy z pracownikami tymczasowymi.<br>
+                    Dzięki platformie klienci mają „ręce do pracy” w 48h.<br>
+                    Skutecznie. Bez czasochłonnej rekrutacji.</p>
+                <button class="btn text-white fw-bold mt-5"
+                    style="background-color: #FF4221; border-radius: 16px;">Zobacz, jak to działa</button>
+
+            </div>
+            <div class="col-6">
+                <img src="assets/Wynajem-pracownikow-na-godziny.png" width="550px">
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 3 MOBILE -->
+
+    <div class="container-fluid pt-5 d-block d-md-none pb-5" style="background-color: #F2F0FD; color: #172C45;">
+        <div class="row mx-auto text-center" style="background-color: #C0B6F3; width: 90%; border-radius: 16px;">
+            <div class="row mx-auto">
+                <p class="fw-bold fs-5 mt-5">Czym jest Tikrow?</p>
+                <p class="fw-bold fs-1 mt-3">Pracownicy na godziny <br>w aplikacji</p>
+                <p class="fw-medium fs-5 mt-5">W Akolja łączymy firmy z pracownikami tymczasowymi.<br>
+                    Dzięki platformie klienci mają „ręce do pracy” w 48h.<br>
+                    Skutecznie. Bez czasochłonnej rekrutacji.</p>
+                <img src="assets/Wynajem-pracownikow-na-godziny.png" width="550px">
+                <button class="btn text-white fw-bold mt-5 mx-auto"
+                    style="background-color: #FF4221; border-radius: 16px; width: 60%;">Zobacz, jak
+                    to działa</button>
+
+            </div>
+            <div class="row pb-5">
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- WIDOK 4 ------------------------------------------>
+
+
+    <div class="container-fluid pt-5 pb-5 d-none d-md-block" style="background-color: #F2F0FD; color: #172C45;">
+        <div class="row mx-auto text-center" style="background-color: #C0B6F3; width: 60%; border-radius: 16px;">
+            <div class="col-6">
+                <img src="assets/grafik.png" width="550px">
+            </div>
+            <div class="col-6">
+                <p class="fw-bold fs-5 mt-5">Wszystko w zasięgu ręki, także na PC</p>
+                <p class="fw-bold fs-1 mt-3">Masz pełną kontrolę nad <br> grafikiem pracy</p>
+                <p class="fw-medium fs-5 mt-5">Zarządzasz zleceniami na wygodnej liście z kalendarzem.<br>
+                    Reagujesz na potrzeby kadrowe tu i teraz z poziomu centrali<br>
+                    jak i poszczególnych lokalizacji. Bez papierologii. Zdalnie.</p>
+                <button class="btn text-white fw-bold mt-5"
+                    style="background-color: #FF4221; border-radius: 16px;">Zobacz, jak to działa</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 4 MOBILE -->
+
+    <div class="container-fluid pt-5 d-block d-md-none pb-5" style="background-color: #F2F0FD; color: #172C45;">
+        <div class="row mx-auto text-center" style="background-color: #C0B6F3; width: 90%; border-radius: 16px;">
+            <div class="row mx-auto">
+                <p class="fw-bold fs-5 mt-5">Wszystko w zasięgu ręki, także na PC</p>
+                <p class="fw-bold fs-1 mt-3">Masz pełną kontrolę nad <br> grafikiem pracy</p>
+                <p class="fw-medium fs-5 mt-5">Zarządzasz zleceniami na wygodnej liście z kalendarzem.<br>
+                    Reagujesz na potrzeby kadrowe tu i teraz z poziomu centrali<br>
+                    jak i poszczególnych lokalizacji. Bez papierologii. Zdalnie.</p>
+                <img src="assets/grafik.png" width="550px">
+                <button class="btn text-white fw-bold mt-2 mx-auto"
+                    style="background-color: #FF4221; border-radius: 16px; width: 60%;">Zobacz, jak
+                    to działa</button>
+
+            </div>
+            <div class="row pb-5">
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- WIDOK 5 ------------------------------------------>
+
+
+    <div class="container-fluid pt-5 pb-5 d-none d-md-block" style="background-color: #F2F0FD; color: #172C45;">
+        <div class="row mx-auto text-center" style="background-color: #C0B6F3; width: 60%; border-radius: 16px;">
+            <div class="col-6">
+                <img src="assets/znamimasz.png" width="550px">
+            </div>
+            <div class="col-6">
+                <p class="fw-bold fs-5 mt-5">Odpowiedni pracownicy do wymagających zleceń</p>
+                <p class="fw-bold fs-1 mt-3">Z nami masz spokojną <br> głowę</p>
+                <p class="fw-medium fs-5 mt-5">Dbamy o kwestie prawne, formalności i rozliczenia. Mamy<br>
+                    kilkuetapowy proces weryfikacji pracowników. Klienci<br>
+                    oceniają ich pracę na 4,8/5 gwiazdek.</p>
+                <button class="btn text-white fw-bold mt-5"
+                    style="background-color: #FF4221; border-radius: 16px;">Zobacz, jak to działa</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 5 MOBILE -->
+
+    <div class="container-fluid pt-5 d-block d-md-none pb-5" style="background-color: #F2F0FD; color: #172C45;">
+        <div class="row mx-auto text-center" style="background-color: #C0B6F3; width: 90%; border-radius: 16px;">
+            <div class="row mx-auto">
+                <p class="fw-bold fs-5 mt-5">Odpowiedni pracownicy do wymagających zleceń</p>
+                <p class="fw-bold fs-1 mt-3">Z nami masz spokojną <br> głowę</p>
+                <p class="fw-medium fs-5 mt-5">Dbamy o kwestie prawne, formalności i rozliczenia. Mamy<br>
+                    kilkuetapowy proces weryfikacji pracowników. Klienci<br>
+                    oceniają ich pracę na 4,8/5 gwiazdek.</p>
+                <img src="assets/znamimasz.png" width="550px">
+                <button class="btn text-white fw-bold mt-5 mx-auto"
+                    style="background-color: #FF4221; border-radius: 16px; width: 60%;">Zobacz, jak
+                    to działa</button>
+
+            </div>
+            <div class="row pb-5">
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- WIDOK 6 ------------------------------------------>
+
+    <div class="container-fluid pt-5 pb-5 d-none d-md-block" style="background-color: #C0B6F3; color: #172C45;">
+        <div class="row mx-auto text-center">
+            <div class="col-5 ms-auto align-self-center">
+                <p class="fw-bold fs-1 pb-5">Branże, które wspieramy</p>
+                <p class="fs-5 mt-5 pb-5">
+                    Piki sezonowe, święta, inwentaryzacje, <br>
+                    wyprzedaże, akcje sprzedażowe <br>
+                    – uelastyczniamy grafiki pracy, <br>
+                    wspierając firmy na rożnych etapach rozwoju.
+                </p>
+                <button class="btn text-white fw-bold mt-5 mx-auto"
+                    style="background-color: #FF4221; border-radius: 16px;">
+                    Nie widzisz swojej branży? Zapytaj nas o nią
+                </button>
+            </div>
+            <div class="col-6 me-auto">
+                <div class="row text-center">
+                    <div class="col-5 mx-auto p-5" style="background-color: #F2F0FD; border-radius: 16px;">
+                        <p class="fw-bold fs-5">Handel i sprzedaż detaliczna</p>
+                        <p class="fs-6">Obsługa klienta, kasjerzy,<br>
+                            sprzedawcy,<br>
+                            pracownicy porządkowi<br>
+                            lub inwentaryzacji itd.</p>
+                        <button class="btn fw-bold mt-3"
+                            style="background-color: #C0B6F3; border-radius: 16px; color: #172C45;">
+                            Chcę poznać szczegóły
+                        </button>
+                    </div>
+                    <div class="col-5 mx-auto p-5" style="background-color: #F2F0FD; border-radius: 16px;">
+                        <p class="fw-bold fs-5">Logistyka i magazyny</p>
+                        <p class="fs-6">
+                            Pakowanie, wykładanie towaru, magazynowanie,<br>
+                            pomocnicy operatora,<br>
+                            pracownicy produkcji itd.
+                            <button class="btn fw-bold mt-3"
+                                style="background-color: #C0B6F3; border-radius: 16px; color: #172C45;">
+                                Chcę poznać szczegóły
+                            </button>
+                    </div>
+                </div>
+                <div class="row mt-5 text-center">
+                    <div class="col-5 mx-auto p-5" style="background-color: #F2F0FD; border-radius: 16px;">
+                        <p class="fw-bold fs-5">Produkcja</p>
+                        <p class="fs-6">Kontrola jakości,<br>
+                            obsługa maszyn i narzędzi,<br>
+                            wykładanie<br>
+                            i segregowanie towaru itd.</p>
+                        <button class="btn fw-bold mt-3"
+                            style="background-color: #C0B6F3; border-radius: 16px; color: #172C45;">
+                            Chcę poznać szczegóły
+                        </button>
+                    </div>
+                    <div class="col-5 mx-auto p-5" style="background-color: #F2F0FD; border-radius: 16px;">
+                        <p class="fw-bold fs-5">HoReCa</p>
+                        <p class="fs-6">Pomoc kelnerska i kucharska,<br>
+                            hostessy, pokojówki,<br>
+                            obsługa bankietów,<br>
+                            promotorzy itd.</p>
+                        <button class="btn fw-bold mt-3"
+                            style="background-color: #C0B6F3; border-radius: 16px; color: #172C45;">
+                            Chcę poznać szczegóły
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 6 MOBILE -->
+
+    <div class="container-fluid pt-5 pb-5 d-md-none pb-5" style="background-color: #C0B6F3; color: #172C45;">
+        <div class="row mx-auto text-center">
+            <p class="fw-bold fs-1 pb-5">Branże, które wspieramy</p>
+            <p class="fs-5 mt-3 pb-5">
+                Piki sezonowe, święta, inwentaryzacje, <br>
+                wyprzedaże, akcje sprzedażowe <br>
+                – uelastyczniamy grafiki pracy, <br>
+                wspierając firmy na rożnych etapach rozwoju.
+            </p>
+            <button class="btn text-white fw-bold mt-3 mx-auto"
+                style="background-color: #FF4221; border-radius: 16px; width: 70%;">
+                Nie widzisz swojej branży?<br> Zapytaj nas o nią
+            </button>
+        </div>
+        <div class="col-md-6 me-auto">
+            <div class="row text-center">
+                <div class="col-md-5 col-10 mt-5 mx-auto p-5" style="background-color: #F2F0FD; border-radius: 16px;">
+                    <p class="fw-bold fs-5">Handel i sprzedaż detaliczna</p>
+                    <p class="fs-6">Obsługa klienta, kasjerzy,<br>
+                        sprzedawcy,<br>
+                        pracownicy porządkowi<br>
+                        lub inwentaryzacji itd.</p>
+                    <button class="btn fw-bold mt-3"
+                        style="background-color: #C0B6F3; border-radius: 16px; color: #172C45;">
+                        Chcę poznać szczegóły
+                    </button>
+                </div>
+                <div class="col-md-5 col-10 mt-5 mx-auto p-5" style="background-color: #F2F0FD; border-radius: 16px;">
+                    <p class="fw-bold fs-5">Logistyka i magazyny</p>
+                    <p class="fs-6">
+                        Pakowanie, wykładanie towaru, magazynowanie,<br>
+                        pomocnicy operatora,<br>
+                        pracownicy produkcji itd.
+                    </p>
+                    <button class="btn fw-bold mt-3"
+                        style="background-color: #C0B6F3; border-radius: 16px; color: #172C45;">
+                        Chcę poznać szczegóły
+                    </button>
+                </div>
+                <div class="col-md-5 col-10 mt-5 mx-auto p-5" style="background-color: #F2F0FD; border-radius: 16px;">
+                    <p class="fw-bold fs-5">Produkcja</p>
+                    <p class="fs-6">Kontrola jakości,<br>
+                        obsługa maszyn i narzędzi,<br>
+                        wykładanie<br>
+                        i segregowanie towaru itd.</p>
+                    <button class="btn fw-bold mt-3"
+                        style="background-color: #C0B6F3; border-radius: 16px; color: #172C45;">
+                        Chcę poznać szczegóły
+                    </button>
+                </div>
+                <div class="col-md-5 col-10 mt-5 mx-auto p-5" style="background-color: #F2F0FD; border-radius: 16px;">
+                    <p class="fw-bold fs-5">HoReCa</p>
+                    <p class="fs-6">Pomoc kelnerska i kucharska,<br>
+                        hostessy, pokojówki,<br>
+                        obsługa bankietów,<br>
+                        promotorzy itd.</p>
+                    <button class="btn fw-bold mt-3"
+                        style="background-color: #C0B6F3; border-radius: 16px; color: #172C45;">
+                        Chcę poznać szczegóły
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!----------------------------- WIDOK 7 ------------------------------------------>
+
+    <div class="container-fluid pt-5" style="background-color: #172C45; padding-bottom: 5%;">
+        <div class="row text-center">
+            <p class="fw-bold fs-6 text-white">Tworzymy różnicę na rynku usług rekrutacyjnych i pozyskiwania pracowników
+            </p>
+            <p class="fw-bold fs-1 text-white" style="line-height: 1.1em;">Agencja Pracy Natychmiastowej™ <br> a agencja
+                pracy tymczasowej</p>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-3 col-10 mx-auto mt-4"
+                style="background-color: #F2F0FD; border-radius: 16px; padding: 0.8%;">
+                <p class="fw-bold" style="font-size: 22px;">Czas dostarczania pracowników</p>
+                <p style="font-size: 19px;">
+                    Akolja = mamy sprawdzonych pracowników dostępnych "od ręki".
+                </p>
+                <p style="font-size: 19px;">
+                    Agencje pracy tymczasowej = od kilku tygodni do kilku miesięcy.
+                </p>
+            </div>
+            <div class="col-md-3 col-10 mx-auto mt-4"
+                style="background-color: #F2F0FD; border-radius: 16px; padding: 0.8%;">
+                <p class="fw-bold" style="font-size: 22px;">Ewidencja czasu pracy pracownika</p>
+                <p style="font-size: 19px;">
+                    Akolja = automatyczna, bez papierologii. System sam zlicza przepracowane godziny.
+                </p>
+                <p style="font-size: 19px;">
+                    APT = konieczność wysyłania podpisanej ewidencji czasu pracy zawsze do max. 3 dnia miesiąca.
+                </p>
+            </div>
+            <div class="col-md-3 col-10 mx-auto mt-4"
+                style="background-color: #F2F0FD; border-radius: 16px; padding: 0.8%;">
+                <p class="fw-bold" style="font-size: 22px;">Mierzenie i weryfikacja jakości pracy pracowników</p>
+                <p style="font-size: 19px;">
+                    Akolja = klient wie, ilu pracowników przyjdzie, ocenia wykonanie zlecenia. 99% pracowników to
+                    Polacy.
+                </p>
+                <p style="font-size: 19px;">
+                    APT = duża niewiedza na temat jakości pracownika przed podjęciem współpracy.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-3 col-10 mx-auto mt-4"
+                style="background-color: #F2F0FD; border-radius: 16px; padding: 0.8%;">
+                <p class="fw-bold" style="font-size: 22px;">Elastyczność</p>
+                <p style="font-size: 19px;">
+                    Akolja = zlecający zamawia pracowników, kiedy potrzebuje na dowolną liczbę dni i godzin.
+                </p>
+                <p style="font-size: 19px;">
+                    APT = konieczność podjęcia wszystkich decyzji na początku współpracy, w tym o czasie trwania
+                    projektu.
+                </p>
+            </div>
+            <div class="col-md-3 col-10 mx-auto mt-4"
+                style="background-color: #F2F0FD; border-radius: 16px; padding: 0.8%;">
+                <p class="fw-bold" style="font-size: 22px;">Dostępność usługi</p>
+                <p style="font-size: 19px;">
+                    Akolja = pełny dostęp i obsługa zleceń 24h/7 online.
+                </p>
+                <p style="font-size: 19px;">
+                    Typowe agencje pracy tymczasowej (APT) działają od pon. do pt., w godzinach 9.00-17.00.
+                </p>
+            </div>
+            <div class="col-md-3 col-10 mx-auto mt-4"
+                style="background-color: #F2F0FD; border-radius: 16px; padding: 0.8%;">
+                <p class="fw-bold" style="font-size: 22px;">Dostępność pracowników</p>
+                <p style="font-size: 19px;">
+                    Akolja = baza >160 000 pracowników gotowych do pracy z dnia na dzień w całej Polsce.
+                </p>
+                <p style="font-size: 19px;">
+                    APT = długi czas oczekiwania ze względu na konieczność przeprowadzenia procesu rekrutacji.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3 col-10 mx-auto mt-4"
+                style="background-color: #F2F0FD; border-radius: 16px; padding: 0.8%;">
+                <p class="fw-bold" style="font-size: 22px;">Rozliczenie</p>
+                <p style="font-size: 19px;">
+                    Akolja = rozliczenie na postawie 1 faktury, opłata wyłącznie za przepracowane godziny.
+                </p>
+                <p style="font-size: 19px;">
+                    APT = rozliczenie projektowe, zawierające koszty obsługi projektu oraz inne koszty niezwiązane z
+                    realizacją pracy u pracodawcy.
+                </p>
+            </div>
+            <div class="col-md-3 col-10 mx-auto mt-4"
+                style="background-color: #F2F0FD; border-radius: 16px; padding: 0.8%;">
+                <p class="fw-bold" style="font-size: 22px;">Formalności</p>
+                <p style="font-size: 19px;">
+                    Akolja = umowa ramowa, zdalna obsługa całego procesu oraz dostęp online do panelu raportowego
+                    Microsoft Power BI.
+                </p>
+                <p style="font-size: 19px;">
+                    APT = każdorazowe zamówienia zgłaszane agencji w formie papierowej bądź mailowej.
+                </p>
+            </div>
+            <div class="col-md-3 col-10 mx-auto mt-4"
+                style="background-color: #F2F0FD; border-radius: 16px; padding: 0.8%;">
+                <p class="fw-bold" style="font-size: 22px;">Jakość pracowników</p>
+                <p style="font-size: 19px;">
+                    Akolja = wysoka motywacja pracowników ze względu na wypłaty w 15 min. po każdym zrealizowanym
+                    zleceniu.
+                </p>
+                <p style="font-size: 19px;">
+                    APT = niskie z uwagi na wypłaty wynagrodzenia do 10 dm. niezależnie od czasu trwania umowy.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- WIDOK 7 FOOTER --------------------------------------------->
+
+    <div class="container-fluid pb-5 pt-5 d-none d-md-block" style="background-color: #F2F0FD;" id="footer">
+        <div class="row mx-auto" style="width: 75%;">
+            <div class="col">
+                <p class="fw-bold">O Akolja</p>
+                <a href="#" style="text-decoration: none;">
+                    <p class="mt-4">O nas</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Pracuj z nami</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Akolja w mediach</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Centrum prasowe</p>
+                </a>
+            </div>
+            <div class="col">
+                <p class="fw-bold">Dla pracowników</p>
+                <a href="#" style="text-decoration: none;">
+                    <p class="mt-4">Ofert pracy tymczasowej</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Najczęstsze pytania</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Blog</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Regulamin</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Kontakt</p>
+                </a>
+                <button type="button" class="btn"><span class="fw-bold">Logowanie dla pracowników</span></button>
+            </div>
+            <div class="col">
+                <p class="fw-bold">Dla firm</p>
+                <a href="#" style="text-decoration: none;">
+                    <p class="mt-4">Pracownicy na godziny</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Faq</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Blog</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Regulamin</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Kontakt</p>
+                </a>
+                <button type="button" class="btn"><span class="fw-bold">Logowanie dla firm</span></button>
+            </div>
+            <div class="col">
+                <p style="font-size: 13px;">Należymy do grona firm członkowskich:</p>
+                <img src="assets/lewiatan.svg" alt="" class="mt-1"><br>
+                <img src="assets/nagrodahr.svg" alt="" class="mt-3">
+            </div>
+            <div class="col">
+                <p style="font-size: 13px;">Nagrody:</p>
+                <img src="assets/perla.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK FOOTER MOBILE -->
+
+    <div class="container-fluid d-md-none pt-5 pb-5" style="background-color: #F2F0FD; color: #172C45;">
+        <div class="row">
+            <div class="accordion" id="accordionExample" style="background-color: unset; border: none;">
+                <div class="accordion-item" style="background-color: unset; border: none;">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: unset; border: none;">
+                    <p class="fw-bold mb-0">O akolja</p>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href=""><p class="mb-0">O nas</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracuj z nami</p></a>
+                        <a href=""><p class="mb-0 mt-1">Akolja w mediach</p></a>
+                        <a href=""><p class="mb-0 mt-1">Centrum prasowe</p></a>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item" style="background-color: unset; border: none;">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: unset; border: none;">
+                        <p class="fw-bold mb-0">Dla pracowników</p>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href=""><p class="mb-0 mt-1">Oferta pracy tymczasowej</p></a>
+                        <a href=""><p class="mb-0 mt-1">Kontakt</p></a>
+                        <a href=""><p class="mb-0 mt-1">Aplikacja do szukania pracy</p></a>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item" style="background-color: unset; border: none;">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: unset; border: none;">
+                        <p class="fw-bold mb-0">Dla firm</p>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href=""><p class="mb-0">Pracownicy na godziny</p></a>
+                        <a href=""><p class="mb-0 mt-1">Regulamin</p></a>
+                        <a href=""><p class="mb-0 mt-1">Kontakt</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy produkcyjni</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy magazynowi</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy dla retail</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy dla HoReCa</p></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button class="mx-auto mt-4 text-white fw-bold pt-2 pb-2" style="background-color: #FF4221; border: none; width: 50%;">Logowanie</button>
+        </div>
+        <div class="row mt-5">
+            <div class="col-4 mx-auto" style="border: 0px solid black;">
+                <p class="fw-bold" style="font-size: 12px;">Należymy do grona firm członkowskich:</p>
+                <img src="assets/nagrodahr.svg" width="80px"/>
+                <img src="assets/lewiatan.svg" class="mt-2" width="80px"/>
+            </div>
+            <div class="col-4 mx-auto" style="border: 0px solid black;">
+                <p class="fw-bold" style="font-size: 12px;">Nagrody:</p>
+                <img src="assets/perla.svg" width="80px"/>
+        </div>
+    </div>
+
+
+
+    <script>
+        window.addEventListener('scroll', (e) => {
+            const nav = document.querySelector('#header');
+            if (window.pageYOffset > 0) {
+                nav.classList.add("add-shadow");
+            } else {
+                nav.classList.remove("add-shadow");
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akolja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="stylesheet" href="style-home.css">
+</head>
+
+<body>
+
+    <!------------------------------WIDOK 0 NAVBAR ----------------------------------->
+
+    <nav class="navbar navbar-expand-lg pt-3 pb-3 d-none d-md-block" id="header" style="background-color: #C0B6F3;">
+        <div class="container-fluid" style="color: #172c45;">
+            <div class="row mx-auto" style="width: 70%;">
+                <div class="col-3">
+                    <a class="navbar-brand fw-bold fs-3" href="#">Akolja</a>
+                </div>
+                <div class="col-4 mx-auto">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" aria-current="page" href="#" style="color: #FF4221; font-weight: bold;">Strona główna</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold me-1 ms-1" href="#">Dla szukających pracy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#">Dla firm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="8" r="5"></circle>
+                        <path d="M8 14H12H16V21H8V14Z"></path>
+                    </svg>
+                    <a href="" class="fw-bold fs-6 mb-0 ms-1">
+                        <p class="mb-0">Moje konto</p>
+                    </a>
+                    <button class="ms-3 p-1 ps-3 pe-3 fw-bold"
+                        style="background-color: #F2F0FD; border-radius: 16px; border: none;">22 100 43 15</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- WIDOK 0 NAVBAR MOBILE -->
+
+    <div class="container-fluid d-block d-md-none pb-3 pt-3" style="background-color: #f2f0fd;" id="header">
+
+        <div class="row">
+            <div class="col-3 d-flex">
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample" style="background-color: unset; border: none;">
+                    <img src="assets/burger-bar.png" width="30px" class="ms-auto" />
+                </a>
+                <p class="fw-bold align-self-center mb-0 mt-0 fs-2 ms-1">Akolja</p>
+            </div>
+
+            <div class="col-7 ms-auto d-flex">
+                <img src="assets/profile-user.png" class="align-self-center" width="30px" height="30px">
+                <a href="" class="ms-3 p-2 ps-3 pe-3 fw-bold"
+                    style="background-color: #C0B6F3; border-radius: 16px; border: none; text-decoration: none; color: #172C45;">22
+                    100 43 15</a>
+            </div>
+
+        </div>
+
+
+
+        <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel" style="background-color: #F2F0FD;">
+            <div class="row pt-3 pb-3" style="background-color: #C0B6F3;">
+                <div class="col-3 ms-2">
+                    <p class="fw-bold fs-2 ms-2 mb-0">Akolja</p>
+                </div>
+                <div class="col-2 ms-auto me-1">
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"
+                        style="background-color: unset; border: none;"><img src="assets/close.png" class="mt-auto"
+                            width="20px" /></button>
+                </div>
+            </div>
+            <div class="row p-3" style="background-color: white;">
+                <div class="col-6">
+                    <a href="" style="text-decoration: none;">
+                        <p class="fw-bold mb-0" style="color: #172C45;">O nas</p>
+                    </a>
+                </div>
+                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                    <img src="assets/fast-forward.png" alt="" width="15px">
+                </div>
+            </div>
+            <div class="row p-3" style="background-color: white;">
+                <div class="col-6">
+                    <a href="" style="text-decoration: none;">
+                        <p class="fw-bold mb-0" style="color: #172C45;">Dla szukających pracy</p>
+                    </a>
+                </div>
+                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                    <img src="assets/fast-forward.png" alt="" width="15px">
+                </div>
+            </div>
+
+            <div class="row p-3" style="background-color: white; border-radius: 15px;">
+                <div class="col-6">
+                    <a href="" style="text-decoration: none;">
+                        <p class="fw-bold mb-0" style="color: #172C45;">Dla firm</p>
+                    </a>
+                </div>
+                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                    <img src="assets/fast-forward.png" alt="" width="15px">
+                </div>
+            </div>
+
+            <div class="row mt-2 p-3">
+                <a href="" style="text-decoration: none;">
+                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Kontakt dla firm</p>
+                </a>
+                <a href="" style="text-decoration: none;" class="mt-2">
+                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Kontakt dla pracownika</p>
+                </a>
+                <a href="" style="text-decoration: none;" class="mt-2">
+                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Moje konto</p>
+                </a>
+            </div>
+
+            <div class="flex-row d-flex mt-2 p-3">
+                <a href="">
+                    <img src="assets/facebook.png" width="30px">
+                </a>
+                <a href="" class="ms-2">
+                    <img src="assets/instagram.png" width="30px">
+                </a>
+                <a href="" class="ms-2">
+                    <img src="assets/linkedin.png" width="30px">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- WIDOK 1 ------------------------------------------>
+
+    <div class="container-fluid pt-2 d-none d-md-block pb-5" style="background-color: #172C45;">
+        <div class="row mx-auto" style="width: 60%;">
+            <p class="fw-bold fs-3 text-white mt-5">Dowolna praca na dowolny dzień.</p>
+            <p class="fw-bold text-white mt-5" style="font-size: 45px; letter-spacing: 2px;">
+                akolja to agencja pracy
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/50a3a657-db5f-47aa-8b92-bdaf6d238518/BZbo4YNdaD.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                natychmiastowej
+                - baza
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/1c707932-dca0-4e50-9206-8f6764c72019/8RtpXzl9OU.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                pracowników »na już«. Wypełniamy
+                luki kadrowe
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/3b88a7a0-f066-41b2-b500-a5c5d5a75fa7/OAAvTVBXsZ.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                z dnia na dzień i na
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/bd944a35-53cf-4f5a-b7a3-ecfa3e66600b/1u1wyo8HBK.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                konkretny dzień. Z nami grafik pracy jest<br>
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/bd944a35-53cf-4f5a-b7a3-ecfa3e66600b/1u1wyo8HBK.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/bd944a35-53cf-4f5a-b7a3-ecfa3e66600b/1u1wyo8HBK.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/bd944a35-53cf-4f5a-b7a3-ecfa3e66600b/1u1wyo8HBK.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                zawsze pełny.
+            </p>
+        </div>
+    </div>
+
+    <!-- WIDOK 1 MOBILE -->
+
+    <div class="container-fluid pt-3 d-block d-md-none" style="background-color: #172C45;">
+        <div class="row mx-auto text-center" style="width: 90%;">
+            <p class="fw-bold fs-5 text-white mt-5">Dowolna praca na dowolny dzień.</p>
+            <p class="fw-bold text-white mt-5" style="font-size: 25px; letter-spacing: 2px;">
+                akolja to agencja pracy
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/50a3a657-db5f-47aa-8b92-bdaf6d238518/BZbo4YNdaD.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                natychmiastowej
+                - baza
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/1c707932-dca0-4e50-9206-8f6764c72019/8RtpXzl9OU.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                pracowników »na już«. Wypełniamy
+                luki kadrowe
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/3b88a7a0-f066-41b2-b500-a5c5d5a75fa7/OAAvTVBXsZ.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                z dnia na dzień i na
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/bd944a35-53cf-4f5a-b7a3-ecfa3e66600b/1u1wyo8HBK.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                konkretny dzień. Z nami grafik pracy jest<br>
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/bd944a35-53cf-4f5a-b7a3-ecfa3e66600b/1u1wyo8HBK.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/bd944a35-53cf-4f5a-b7a3-ecfa3e66600b/1u1wyo8HBK.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                <span id="lottie-player-prop">
+                    <dotlottie-player src="https://lottie.host/bd944a35-53cf-4f5a-b7a3-ecfa3e66600b/1u1wyo8HBK.json"
+                        background="transparent" speed="1" style="width: 75px; height: 75px;" loop
+                        autoplay></dotlottie-player>
+                </span>
+                zawsze pełny.
+            </p>
+        </div>
+    </div>
+
+    <!------------------------------- WIDOK 2 ------------------------------------------->
+
+    <div class="container-fluid d-none d-md-block pt-5 pb-5" style="background-color: #F2F0FD;">
+        <div class="row pt-5 mb-5 mx-auto w-50">
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/QzXpBaZcKmg"
+                title="Akolja - aplikacja mobilna" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <!-- WIDOK 2 MOBILE -->
+
+    <div class="container-fluid d-block d-md-none pt-5 pb-5" style="background-color: #F2F0FD;">
+        <div class="row pt-5 mx-auto" style="width: 90%;">
+            <iframe width="900" height="306" src="https://www.youtube.com/embed/QzXpBaZcKmg"
+                title="Akolja - aplikacja mobilna" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!------------------------------- WIDOK 3 ------------------------------------------->
+
+    <div class="container-fluid mb-5 d-none d-md-block" style="background-color: #F2F0FD; padding-bottom: 5%;">
+        <div class="row mx-auto">
+            <div class="col-md-4 ms-md-auto me-md-2 mt-5 p-5 p-md-none"
+                style="background-color: #C0B6F3; border-radius: 13px; padding: 2%;">
+                <p class="fw-bold fs-3" style="color: #172C45;">Dla szukających pracy</p>
+                <p class="fw-bolder" style="color: #172C45; font-size: 18px;">Zlecenia na już. Natychmiastowa wypłata.
+                </p>
+                <button class="btn mt-5 text-white fw-bold" style="background-color: #FF4221;"
+                    id="btnHoverEffect">Wybierz pierwsze zlecenie</button>
+                <br>
+                <img style="margin-top: 10%;" src="assets/dlaszukajacych.png" alt="google play" height="250px">
+            </div>
+            <div class="col-md-4 me-md-auto ms-md-2 mt-5 p-5 p-md-none"
+                style="background-color: #172C45; border-radius: 13px; padding: 2%;">
+                <p class="fw-bold fs-3 text-white">Dla szukających pracowników.</p>
+                <p class="fw-bolder text-white" style="font-size: 18px;">Pracownicy z dnia na dzień. Natychmiastowe
+                    wdrożenie.</p>
+                <button class="btn mt-5 text-white fw-bold" style="background-color: #FF4221;" id="btnHoverEffect">Zamów
+                    pracownika w aplikacji</button>
+                <br>
+                <img style="margin-top: 10%;" src="assets/dlafirm.png" alt="google play" height="220px">
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 3 MOBILE -->
+
+    <div class="container-fluid mb-5 d-md-none text-center" style="background-color: #F2F0FD; padding-bottom: 5%;">
+        <div class="row mx-auto">
+            <div class="col-md-4 ms-md-auto me-md-2 mt-5 p-5 p-md-none"
+                style="background-color: #C0B6F3; border-radius: 13px; padding: 2%;">
+                <p class="fw-bold fs-3" style="color: #172C45;">Dla szukających pracy</p>
+                <p class="fw-bolder" style="color: #172C45; font-size: 18px;">Zlecenia na już. Natychmiastowa wypłata.
+                </p>
+                <button class="btn mt-3 text-white fw-bold" style="background-color: #FF4221;"
+                    id="btnHoverEffect">Wybierz pierwsze zlecenie</button>
+                <br>
+                <img style="margin-top: 10%;" src="assets/dlaszukajacych.png" alt="google play" height="250px">
+            </div>
+            <div class="col-md-4 me-md-auto ms-md-2 mt-5 p-5 p-md-none"
+                style="background-color: #172C45; border-radius: 13px; padding: 2%;">
+                <p class="fw-bold fs-3 text-white">Dla szukających pracowników.</p>
+                <p class="fw-bolder text-white" style="font-size: 18px;">Pracownicy z dnia na dzień. Natychmiastowe
+                    wdrożenie.</p>
+                <button class="btn mt-5 text-white fw-bold" style="background-color: #FF4221;" id="btnHoverEffect">Zamów
+                    pracownika w aplikacji</button>
+                <br>
+                <img style="margin-top: 10%;" src="assets/dlafirm.png" alt="google play" height="140px">
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- WIDOK 4 --------------------------------------------->
+
+    <div class="container pb-5 d-none d-md-block">
+        <div class="row text-center fs-1">
+            <p class="fw-bold" style="color: #172C45;">Natychmiastowo, czyli tak</p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="150px">
+                <p class="fw-bold fs-5">Elastyczny pracownik w 48h,<br>natychmiastowa wypłata</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="150px">
+                <p class="fw-bold fs-5">Minimum formalności,<br>pełne bezpieczeństwo</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="150px">
+                <p class="fw-bold fs-5">Sprawdzeni pracownicy,<br>porządne firmy</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="150px">
+                <p class="fw-bold fs-5">Dostępność 24/7</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="150px">
+                <p class="fw-bold fs-5">Bez czasochłonnej rekrutacji</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="150px">
+                <p class="fw-bold fs-5">Łatwa obsługa w aplikacji</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 4 MOBILE -->
+
+    <div class="container pb-5 d-block d-md-none ">
+        <div class="row text-center fs-1">
+            <p class="fw-bold" style="color: #172C45;">Natychmiastowo, czyli tak</p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="100px">
+                <p class="fw-bold" style="font-size: 16px; margin-top: 4%;">Elastyczny pracownik w 48h,<br>natychmiastowa wypłata</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="100px">
+                <p class="fw-bold" style="font-size: 16px; margin-top: 4%;">Minimum formalności,<br>pełne bezpieczeństwo</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="100px">
+                <p class="fw-bold" style="font-size: 16px; margin-top: 4%;">Sprawdzeni pracownicy,<br>porządne firmy</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="100px">
+                <p class="fw-bold" style="font-size: 16px; margin-top: 4%;">Dostępność 24/7</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="100px">
+                <p class="fw-bold" style="font-size: 16px; margin-top: 4%;">Bez czasochłonnej rekrutacji</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/elastyczny_pracownik.png" width="100px">
+                <p class="fw-bold" style="font-size: 16px; margin-top: 4%;">Łatwa obsługa w aplikacji</p>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- WIDOK 5 --------------------------------------------->
+
+    <div class="container-fluid pt-5 d-none d-md-block" style="background-color:#F2F0FD; padding-bottom: 5%;">
+        <div class="row text-center pt-5">
+            <p class="fw-bold fs-1">Jak to działa?</p>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-3 ms-auto p-4 d-flex" style="background-color: white; border-radius: 16px;">
+                <p class="text-right fw-bold fs-5 mb-0 mx-auto align-self-center"
+                    style="color: #172C45; text-align: right;">
+                    Firma potrzebuje ludzi do pracy<br>
+                    na konkretny dzień. Dodaje<br>
+                    zlecenie w Tikrow.
+                </p>
+                <img src="assets/adding.png" width="90px" height="90px" alt="" />
+            </div>
+            <div class="col-1 text-center d-flex" style="margin-left: 5%; margin-right: 5%;">
+                <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg" class="mt-auto mb-auto">
+                    <circle r="30" cx="50" cy="50" fill="white" class="mt-auto" />
+                </svg>
+            </div>
+            <div class="col-3 me-auto p-4 d-flex" style="background-color: white; border-radius: 16px; width: 25%;">
+                <img src="assets/human.png" width="90px" height="90px" alt=""  class="me-2"/>
+                <p class="fw-bold fs-5 mb-0 mx-2 align-self-center" style="color: #172C45;">
+                    Osoba szukająca pracy chce <br> dorobić “na już” w formie dniówki.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-3 ms-auto p-4 d-flex" style="background-color: white; border-radius: 16px;">
+                <p class="text-right fw-bold fs-5 mb-0 mx-auto align-self-center"
+                    style="color: #172C45; text-align: right;">
+                    Firma ma wykonaną pracę. Ocenia jakość realizacji zlecenia.
+                </p>
+                <img src="assets/adding.png" width="90px" height="90px" alt="" />
+            </div>
+            <div class="col-1 text-center d-flex" style="margin-left: 5%; margin-right: 5%;">
+                <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg" class="mt-auto mb-auto">
+                    <circle r="30" cx="50" cy="50" fill="white" class="mt-auto" />
+                </svg>
+            </div>
+            <div class="col-3 me-auto p-4 d-flex" style="background-color: white; border-radius: 16px; width: 25%;">
+                <img src="assets/human.png" width="90px" height="90px" alt=""  class="me-2"/>
+                <p class="fw-bold fs-5 mb-0 mx-2 align-self-center" style="color: #172C45;">
+                    Osoba szukająca zleceń rejestruje się do Tikrow i pracuje, kiedy jej pasuje.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-3 ms-auto p-4 d-flex" style="background-color: white; border-radius: 16px;">
+                <p class="text-right fw-bold fs-5 mb-0 mx-auto align-self-center"
+                    style="color: #172C45; text-align: right;">
+                    
+    Na koniec miesiąca firma dostaje fakturę za przepracowane godziny.
+                </p>
+                <img src="assets/adding.png" width="90px" height="90px" alt="" />
+            </div>
+            <div class="col-1 text-center d-flex" style="margin-left: 5%; margin-right: 5%;">
+                <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg" class="mt-auto mb-auto">
+                    <circle r="30" cx="50" cy="50" fill="white" class="mt-auto" />
+                </svg>
+            </div>
+            <div class="col-3 me-auto p-4 d-flex" style="background-color: white; border-radius: 16px; width: 25%;">
+                <img src="assets/human.png" width="90px" height="90px" alt=""  class="me-2"/>
+                <p class="fw-bold fs-5 mb-0 mx-2 align-self-center" style="color: #172C45;">
+                    Pracownik dostaje wypłatę natychmiast po wykonaniu zlecenia.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 5 MOBILE -->
+
+    <div class="container-fluid d-block d-md-none pb-5" style="background-color: #F2F0FD;">
+        <div class="row text-center pt-5">
+            <p class="fw-bold fs-2">Jak to działa?</p>
+        </div>
+        <div class="row pb-3">
+            <div class="col-3 mx-auto">
+                <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+                    <circle r="30" cx="50" cy="50" fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="row p-4 mx-auto" style="background-color: white; border-radius: 16px; width: 90%;">
+            <div class="col-3 text-center">
+                <img src="assets/adding.png" width="70px" height="70px" alt="" />
+            </div>
+            <div class="col-8 ms-auto me-1 d-flex">
+                <p class="text-right fw-bold mb-0 mx-auto align-self-center"
+                style="color: #172C45; font-size: 14px;">
+                Firma potrzebuje ludzi do pracy<br>
+                na konkretny dzień. Dodaje<br>
+                zlecenie w Tikrow.
+            </p>
+            </div>
+        </div>
+        <div class="row p-4 mt-3 mx-auto" style="background-color: white; border-radius: 16px; width: 90%;">
+            <div class="col-2 text-center">
+                <img src="assets/adding.png" width="70px" height="70px" alt="" />
+            </div>
+            <div class="col-8 ms-auto me-1 d-flex">
+                <p class="text-right fw-bold mb-0 mx-auto align-self-center"
+                style="color: #172C45; font-size: 14px;">
+                Osoba szukająca pracy chce <br> dorobić “na już” w formie dniówki.
+
+            </p>
+            </div>
+        </div>
+        <div class="row pb-5 mt-5">
+            <div class="col-3 mx-auto">
+                <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+                    <circle r="30" cx="50" cy="50" fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="row p-4 mx-auto" style="background-color: white; border-radius: 16px; width: 90%;">
+            <div class="col-3 text-center">
+                <img src="assets/adding.png" width="70px" height="70px" alt="" />
+            </div>
+            <div class="col-8 ms-auto me-1 d-flex">
+                <p class="text-right fw-bold mb-0 mx-auto align-self-center"
+                style="color: #172C45; font-size: 14px;">
+                Firma ma wykonaną pracę. Ocenia jakość realizacji zlecenia.
+
+            </p>
+            </div>
+        </div>
+        <div class="row p-4 mt-3 mx-auto" style="background-color: white; border-radius: 16px; width: 90%;">
+            <div class="col-2 text-center">
+                <img src="assets/adding.png" width="70px" height="70px" alt="" />
+            </div>
+            <div class="col-8 ms-auto me-1 d-flex">
+                <p class="text-right fw-bold mb-0 mx-auto align-self-center"
+                style="color: #172C45; font-size: 14px;">
+                Osoba szukająca zleceń rejestruje się do Tikrow i pracuje, kiedy jej pasuje.
+
+            </p>
+            </div>
+        </div>
+        <div class="row mt-5 pb-5">
+            <div class="col-3 mx-auto">
+                <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+                    <circle r="30" cx="50" cy="50" fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="row p-4 mx-auto" style="background-color: white; border-radius: 16px; width: 90%;">
+            <div class="col-3 text-center">
+                <img src="assets/adding.png" width="70px" height="70px" alt="" />
+            </div>
+            <div class="col-8 ms-auto me-1 d-flex">
+                <p class="text-right fw-bold mb-0 mx-auto align-self-center"
+                style="color: #172C45; font-size: 14px;">
+                Na koniec miesiąca firma dostaje fakturę za przepracowane godziny.
+
+            </p>
+            </div>
+        </div>
+        <div class="row p-4 mt-3 mx-auto" style="background-color: white; border-radius: 16px; width: 90%;">
+            <div class="col-2 text-center">
+                <img src="assets/adding.png" width="70px" height="70px" alt="" />
+            </div>
+            <div class="col-8 ms-auto me-1 d-flex">
+                <p class="text-right fw-bold mb-0 mx-auto align-self-center"
+                style="color: #172C45; font-size: 14px;">
+                Pracownik dostaje wypłatę natychmiast po wykonaniu zlecenia.
+
+            </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------- WIDOK 6 --------------------------------------------->
+
+
+    <div class="container mt-5 mb-5 d-none d-md-block">
+        <div class="row" id="rowApp">
+            <div class="col-md-5">
+                <p class="fw-bold fs-1" style="line-height: 1em;">Wygodna aplikacja</p>
+                <p class="fw-bold fs-2" style="line-height: 1em; margin-top: 20%;">Zlecenia ,,na już"?<br>Proste:
+                    Dostęp 24/7</p>
+                <p class="fs-6 mt-5">Nie ma co czekać. Aż 80% zadań jest przyjmowanych <br> w mniej niż 24 godziny.
+                </p>
+                <div class="circles">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <p class="fw-bold fs-6 mt-3">Pobierz aplikację mobilną</p>
+                <div class="mb-5">
+                    <img class="d-block-inline" src="assets/google_play.png" alt="google play" height="50px">
+                    <img class="d-block-inline" src="assets/AppStore.png" alt="google play" height="50px">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center"">
+                <img src=" assets/ekran-glowny.png" style="height: 500px;" class="mx-auto mt-0">
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 6 MOBILE -->
+
+    <div class="container mt-5 mb-5 d-block d-md-none text-center">
+        <div class="row pt-5" id="rowApp">
+            <div class="col-md-5">
+                <p class="fw-bold fs-1" style="line-height: 1em;">Wygodna aplikacja</p>
+                <img src=" assets/ekran-glowny.png" style="height: 300px;" class="mx-auto mt-5">
+                <p class="fw-bold fs-2" style="line-height: 1em; margin-top: 20%;">Zlecenia ,,na już"?<br>Proste:
+                    Dostęp 24/7</p>
+                <p class="fs-6 mt-5">Nie ma co czekać. Aż 80% zadań jest przyjmowanych <br> w mniej niż 24 godziny.
+                </p>
+                <div class="circles">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <p class="fw-bold fs-6 mt-3">Pobierz aplikację mobilną</p>
+                <div class="mb-5">
+                    <img class="d-block-inline" src="assets/google_play.png" alt="google play" height="40px">
+                    <img class="d-block-inline" src="assets/AppStore.png" alt="google play" height="40px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- WIDOK 7 FOOTER --------------------------------------------->
+
+    <div class="container-fluid pb-5 pt-5 d-none d-md-block" style="background-color: #F2F0FD;" id="footer">
+        <div class="row mx-auto" style="width: 75%;">
+            <div class="col">
+                <p class="fw-bold">O Akolja</p>
+                <a href="#" style="text-decoration: none;">
+                    <p class="mt-4">O nas</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Pracuj z nami</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Akolja w mediach</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Centrum prasowe</p>
+                </a>
+            </div>
+            <div class="col">
+                <p class="fw-bold">Dla pracowników</p>
+                <a href="#" style="text-decoration: none;">
+                    <p class="mt-4">Ofert pracy tymczasowej</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Najczęstsze pytania</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Blog</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Regulamin</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Kontakt</p>
+                </a>
+                <button type="button" class="btn"><span class="fw-bold">Logowanie dla pracowników</span></button>
+            </div>
+            <div class="col">
+                <p class="fw-bold">Dla firm</p>
+                <a href="#" style="text-decoration: none;">
+                    <p class="mt-4">Pracownicy na godziny</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Faq</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Blog</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Regulamin</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Kontakt</p>
+                </a>
+                <button type="button" class="btn"><span class="fw-bold">Logowanie dla firm</span></button>
+            </div>
+            <div class="col">
+                <p style="font-size: 13px;">Należymy do grona firm członkowskich:</p>
+                <img src="assets/lewiatan.svg" alt="" class="mt-1"><br>
+                <img src="assets/nagrodahr.svg" alt="" class="mt-3">
+            </div>
+            <div class="col">
+                <p style="font-size: 13px;">Nagrody:</p>
+                <img src="assets/perla.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK FOOTER MOBILE -->
+
+    <div class="container-fluid d-md-none pt-5 pb-5" style="background-color: #F2F0FD; color: #172C45;">
+        <div class="row">
+            <div class="accordion" id="accordionExample" style="background-color: unset; border: none;">
+                <div class="accordion-item" style="background-color: unset; border: none;">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: unset; border: none;">
+                    <p class="fw-bold mb-0">O akolja</p>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href=""><p class="mb-0">O nas</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracuj z nami</p></a>
+                        <a href=""><p class="mb-0 mt-1">Akolja w mediach</p></a>
+                        <a href=""><p class="mb-0 mt-1">Centrum prasowe</p></a>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item" style="background-color: unset; border: none;">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: unset; border: none;">
+                        <p class="fw-bold mb-0">Dla pracowników</p>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href=""><p class="mb-0 mt-1">Oferta pracy tymczasowej</p></a>
+                        <a href=""><p class="mb-0 mt-1">Kontakt</p></a>
+                        <a href=""><p class="mb-0 mt-1">Aplikacja do szukania pracy</p></a>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item" style="background-color: unset; border: none;">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: unset; border: none;">
+                        <p class="fw-bold mb-0">Dla firm</p>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href=""><p class="mb-0">Pracownicy na godziny</p></a>
+                        <a href=""><p class="mb-0 mt-1">Regulamin</p></a>
+                        <a href=""><p class="mb-0 mt-1">Kontakt</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy produkcyjni</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy magazynowi</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy dla retail</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy dla HoReCa</p></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button class="mx-auto mt-4 text-white fw-bold pt-2 pb-2" style="background-color: #FF4221; border: none; width: 50%;">Logowanie</button>
+        </div>
+        <div class="row mt-5">
+            <div class="col-4 mx-auto" style="border: 0px solid black;">
+                <p class="fw-bold" style="font-size: 12px;">Należymy do grona firm członkowskich:</p>
+                <img src="assets/nagrodahr.svg" width="80px"/>
+                <img src="assets/lewiatan.svg" class="mt-2" width="80px"/>
+            </div>
+            <div class="col-4 mx-auto" style="border: 0px solid black;">
+                <p class="fw-bold" style="font-size: 12px;">Nagrody:</p>
+                <img src="assets/perla.svg" width="80px"/>
+        </div>
+    </div>
+
+
+
+    <script>
+        window.addEventListener('scroll', (e) => {
+            const nav = document.querySelector('#header');
+            if (window.pageYOffset > 0) {
+                nav.classList.add("add-shadow");
+            } else {
+                nav.classList.remove("add-shadow");
+            }
+        });
+    </script>
+</body>
+
+</html>

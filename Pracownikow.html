@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akolja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="stylesheet" href="style-pracownikow.css">
+</head>
+
+<body>
+    <!------------------------------WIDOK 0 NAVBAR ----------------------------------->
+
+    <nav class="navbar navbar-expand-lg pt-3 pb-3 d-none d-md-block" id="header" style="background-color: #C0B6F3;">
+        <div class="container-fluid" style="color: #172c45;">
+            <div class="row mx-auto" style="width: 70%;">
+                <div class="col-3">
+                    <a class="navbar-brand fw-bold fs-3" href="#">Akolja</a>
+                </div>
+                <div class="col-4 mx-auto">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" aria-current="page" href="#">Strona główna</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold me-1 ms-1" href="#" style="color: #FF4221; font-weight: bold;">Dla szukających pracy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#">Dla firm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="8" r="5"></circle>
+                        <path d="M8 14H12H16V21H8V14Z"></path>
+                    </svg>
+                    <a href="" class="fw-bold fs-6 mb-0 ms-1">
+                        <p class="mb-0">Moje konto</p>
+                    </a>
+                    <button class="ms-3 p-1 ps-3 pe-3 fw-bold"
+                        style="background-color: #F2F0FD; border-radius: 16px; border: none;">22 100 43 15</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- WIDOK 0 NAVBAR MOBILE -->
+
+    <div class="container-fluid d-block d-md-none pb-3 pt-3" style="background-color: #f2f0fd;" id="header">
+
+        <div class="row">
+            <div class="col-3 d-flex">
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample" style="background-color: unset; border: none;">
+                    <img src="assets/burger-bar.png" width="30px" class="ms-auto"/>
+                </a>
+                <p class="fw-bold align-self-center mb-0 mt-0 fs-2 ms-1">Akolja</p>
+            </div>
+
+            <div class="col-7 ms-auto me-1 d-flex">
+                <img src="assets/profile-user.png" class="align-self-center" width="30px" height="30px">
+                <a href="" class="ms-3 p-2 ps-3 pe-3 fw-bold" style="background-color: #C0B6F3; border-radius: 16px; border: none; text-decoration: none; color: #172C45;">22 100 43 15</a>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: #F2F0FD;">
+            <div class="row pt-3 pb-3" style="background-color: #C0B6F3;">
+                <div class="col-3 ms-2">
+                    <p class="fw-bold fs-2 ms-2 mb-0">Akolja</p>
+                </div>
+                <div class="col-2 ms-auto me-1">
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: unset; border: none;"><img src="assets/close.png" class="mt-auto" width="20px"/></button>
+                </div>
+            </div>
+            <div class="row p-3" style="background-color: white;">
+                <div class="col-6" >
+                    <a href="" style="text-decoration: none;">
+                        <p class="fw-bold mb-0" style="color: #172C45;">O nas</p>
+                    </a>
+                </div>
+                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                    <img src="assets/fast-forward.png" alt="" width="15px">
+                </div>
+            </div>
+            <div class="row p-3" style="background-color: white;">
+                <div class="col-6" >
+                    <a href="" style="text-decoration: none;">
+                        <p class="fw-bold mb-0" style="color: #172C45;">Dla szukających pracy</p>
+                    </a>
+                </div>
+                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                    <img src="assets/fast-forward.png" alt="" width="15px">
+                </div>
+            </div>
+
+            <div class="row p-3" style="background-color: white; border-radius: 15px;">
+                <div class="col-6" >
+                    <a href="" style="text-decoration: none;">
+                        <p class="fw-bold mb-0" style="color: #172C45;">Dla firm</p>
+                    </a>
+                </div>
+                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                    <img src="assets/fast-forward.png" alt="" width="15px">
+                </div>
+            </div>
+
+            <div class="row mt-2 p-3">
+                <a href="" style="text-decoration: none;">
+                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Kontakt dla firm</p>
+                </a>
+                <a href="" style="text-decoration: none;" class="mt-2">
+                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Kontakt dla pracownika</p>
+                </a>
+                <a href="" style="text-decoration: none;" class="mt-2">
+                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Moje konto</p>
+                </a>
+            </div>
+
+            <div class="flex-row d-flex mt-2 p-3">
+                <a href="">
+                    <img src="assets/facebook.png" width="30px">
+                </a>
+                <a href="" class="ms-2">
+                    <img src="assets/instagram.png" width="30px">
+                </a>
+                <a href="" class="ms-2">
+                    <img src="assets/linkedin.png" width="30px">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--WIDOK 1-->
+
+    <div class="container mt-5 mb-5 d-none d-md-block">
+        <div class="row" id="rowApp">
+            <div class="col-md-5">
+                <p class="fw-bold fs-2" style="line-height: 1em;">Zacznij zarabiać od <br>zaraz- wystarczy apka</p>
+                <p class="fw-bold fs-4 mt-5" style="line-height: 1em;">Dowolna praca <br>na dowolony dzień.</p>
+                <p class="fs-6 mt-5">Ty wybierasz konkretny dzień i <Br> miejsce pracy. Zlecenia już na<br> ciebie
+                    czekają</p>
+                <div class="circles">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <p class="fw-bold fs-6 mt-3">Pobierz aplikację mobilną</p>
+                <div class="mb-5">
+                    <img class="d-block-inline" src="assets/google_play.png" alt="google play" height="50px">
+                    <img class="d-block-inline" src="assets/AppStore.png" alt="google play" height="50px">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center"">
+                <img src="assets/ekran-glowny.png" style="height: 500px;" class="mx-auto mt-0">
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 1 MOBILE -->
+
+    <div class="container mt-5 mb-5 d-md-none text-center">
+        <div class="row pt-4 pb-5" id="rowApp">
+            <div class="col-md-5">
+                <p class="fw-bold fs-2" style="line-height: 1em;">Zacznij zarabiać od <br>zaraz- wystarczy apka</p>
+                <img src="assets/ekran-glowny.png" style="height: 320px;" class="mx-auto mt-4">
+
+                <p class="fw-bold fs-4 mt-5" style="line-height: 1em;">Dowolna praca <br>na dowolony dzień.</p>
+                <p class="fs-6 mt-5">Ty wybierasz konkretny dzień i <Br> miejsce pracy. Zlecenia już na<br> ciebie
+                    czekają</p>
+                <div class="circles">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <p class="fw-bold fs-6 mt-3">Pobierz aplikację mobilną</p>
+                    <img  src="assets/google_play.png" alt="google play" height="30px">
+                    <img  src="assets/AppStore.png" alt="google play" height="30px">
+            </div>
+        </div>
+    </div>
+
+
+    <!--WIDOK 2-->
+
+    <div class="container-fluid pt-5 pb-5 d-none d-md-block" style="background-color: #F2F0FD;">
+        <div class="row text-center">
+            <p class="fw-bold fs-1" style="line-height: 1em;">Każdego dnia możesz być kimś innym</p>
+        </div>
+        <div class="row w-75-md mt-4" style="margin: auto">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row text-center mb-3">
+                            <p class="w-25 mx-auto fw-bold text-white"
+                                style="background-color: #FF4120; border-radius: 16px; padding: 0.8%;">detal</p>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">pracownik
+                                inwentaryzacji</span>
+                            <span class="fw-bold align-middle text-white ms-2" id="colJobType">kasjer-sprzedawca</span>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">merchandiser</span>
+                            <span class="fw-bold align-middle text-white ms-2" id="colJobType">pracownik
+                                porządkowy</span>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white " id="colJobType">pracownik sklepu</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row text-center mb-3">
+                            <p class="w-25 mx-auto fw-bold text-white"
+                                style="background-color: #FF4120; border-radius: 16px; padding: 0.8%;">logistyka</p>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">pracownik
+                                produkcji</span>
+                            <span class="fw-bold align-middle text-white ms-2" id="colJobType">magazynier</span>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2 ms-5"
+                                id="colJobType">pakowicz-komplementacja
+                                towaru</span>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">pomocnik operatora</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row text-center mb-3">
+                            <p class="w-25 mx-auto fw-bold text-white"
+                                style="background-color: #FF4120; border-radius: 16px; padding: 0.8%;">administracja</p>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">asystentka</span>
+                            <span class="fw-bold align-middle text-white ms-2" id="colJobType">pracownik ds.obsługi
+                                klienta</span>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">archiwista
+                                dokumentów</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 2 MOBILE -->
+
+    <div class="container-fluid pt-5 pb-5 d-block d-md-none" style="background-color: #F2F0FD;">
+        <div class="row text-center">
+            <p class="fw-bold fs-1" style="line-height: 1em;">Każdego dnia możesz być kimś innym</p>
+        </div>
+        <div class="row w-75-md mt-4" style="margin: auto">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row text-center mb-3">
+                            <p class="w-25 mx-auto fw-bold text-white"
+                                style="background-color: #FF4120; border-radius: 16px; padding: 0.8%;">detal</p>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">pracownik
+                                inwentaryzacji</span>
+                            <span class="fw-bold align-middle text-white ms-2" id="colJobType">kasjer-sprzedawca</span>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">merchandiser</span>
+                            <span class="fw-bold align-middle text-white ms-2" id="colJobType">pracownik
+                                porządkowy</span>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white " id="colJobType">pracownik sklepu</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row text-center mb-3">
+                            <p class="w-25 mx-auto fw-bold text-white"
+                                style="background-color: #FF4120; border-radius: 16px; padding: 0.8%;">logistyka</p>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">pracownik
+                                produkcji</span>
+                            <span class="fw-bold align-middle text-white ms-2" id="colJobType">magazynier</span>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2 ms-5"
+                                id="colJobType">pakowicz-komplementacja
+                                towaru</span>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">pomocnik operatora</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row text-center mb-3">
+                            <p class="w-25 mx-auto fw-bold text-white"
+                                style="background-color: #FF4120; border-radius: 16px; padding: 0.8%;">administracja</p>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">asystentka</span>
+                            <span class="fw-bold align-middle text-white ms-2" id="colJobType">pracownik ds.obsługi
+                                klienta</span>
+                        </div>
+                        <div class="text-center mx-auto justify-content-center d-flex mt-2" style="width: 40%;">
+                            <span class="fw-bold align-middle text-white me-2" id="colJobType">archiwista
+                                dokumentów</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 3 -->
+
+    <div class="container-fluid d-none d-md-block" style="background-color: #C0B6F3; padding-bottom: 5%; padding-top: 5%;">
+        <div class="row mx-auto" style="width: 70%;">
+            <div class="col-md-6">
+                <dotlottie-player src="https://lottie.host/9cf88b56-caec-4f51-af6b-db7c469a4958/g2avuSFdLG.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                    autoplay></dotlottie-player>
+
+                <p class="fw-bold" style="line-height: 1.2em; font-size: 45px;">Zastanawiasz się, czy <br>Akolja jest
+                    dla Ciebie?</p>
+                <p class="mt-4" style="font-size: 19px;">Lubimy pomagać i opowiadać o Akolji.<br>Napisz do nas jeżeli
+                    masz jakieś pytania.</p>
+                <p class="mt-4" style="font-size: 19px;">Skorzystaj z formularza lub wyślij e-mail na adres
+                    <a href="mailto:" class="fw-bold"
+                        style="text-decoration: none; color: #172c45;">kontakt@akolja.com</a>
+                </p>
+            </div>
+            <div class="col-md-6 h-50"
+                style="background-color: #F2F0FD; border-radius: 13px; margin-top: auto; margin-bottom: auto;">
+                <div class="mb-3 mt-5">
+                    <input type="email" class="form-control" style="margin-top: 0%;" id="exampleFormControlInput1"
+                        placeholder="Twój adres e-mail">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Twoja wiadomość"></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Zapoznała/em się z treścią informacji o przetwarzaniu danych osobowych zawartych w
+                        <a target="_blank" href="https://akoja.com/polityka-prywatnosci"
+                            style="text-decoration: none; color: #172c45;" class="fw-bold">Polityce Prywatności</a> i
+                        wyrażam zgodę na ich przetwarzanie w celu obsługi zgłoszenia. <span
+                            class="text-danger fw-bold">*</span>
+                    </label>
+                </div>
+                <p class="mt-5 text-danger fw-bold">*<span class="text-dark" style="font-size: 13px;"> pola
+                        obowiązkowe</span></p>
+                <button type="submit" class="btn btn-primary mb-3"
+                    style="margin-bottom: 0%; background-color: #FF4221; border: none;">Wyślij</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 3 MOBILE -->
+
+    <div class="container-fluid d-block d-md-none text-center" style="background-color: #C0B6F3; padding-bottom: 5%; padding-top: 5%;">
+        <div class="row mx-auto" style="width: 90%;">
+            <div class="col-md-6 mb-3">
+                <dotlottie-player src="https://lottie.host/9cf88b56-caec-4f51-af6b-db7c469a4958/g2avuSFdLG.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                    autoplay></dotlottie-player>
+
+                <p class="fw-bold" style="line-height: 1.2em; font-size: 40px;">Zastanawiasz się, czy <br>Akolja jest
+                    dla Ciebie?</p>
+                <p class="mt-4" style="font-size: 19px;">Lubimy pomagać i opowiadać o Akolji.<br>Napisz do nas jeżeli
+                    masz jakieś pytania.</p>
+                <p class="mt-4" style="font-size: 19px;">Skorzystaj z formularza lub wyślij e-mail na adres
+                    <a href="mailto:" class="fw-bold"
+                        style="text-decoration: none; color: #172c45;">kontakt@akolja.com</a>
+                </p>
+            </div>
+            <div class="col-md-6 h-50"
+                style="background-color: #F2F0FD; border-radius: 13px; margin-top: auto; margin-bottom: auto;">
+                <div class="mb-3 mt-5">
+                    <input type="email" class="form-control" style="margin-top: 0%;" id="exampleFormControlInput1"
+                        placeholder="Twój adres e-mail">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Twoja wiadomość"></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Zapoznała/em się z treścią informacji o przetwarzaniu danych osobowych zawartych w
+                        <a target="_blank" href="https://akoja.com/polityka-prywatnosci"
+                            style="text-decoration: none; color: #172c45;" class="fw-bold">Polityce Prywatności</a> i
+                        wyrażam zgodę na ich przetwarzanie w celu obsługi zgłoszenia. <span
+                            class="text-danger fw-bold">*</span>
+                    </label>
+                </div>
+                <p class="mt-5 text-danger fw-bold">*<span class="text-dark" style="font-size: 13px;"> pola
+                        obowiązkowe</span></p>
+                <button type="submit" class="btn btn-primary mb-3"
+                    style="margin-bottom: 0%; background-color: #FF4221; border: none;">Wyślij</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK 4 FOOTER -->
+
+    <div class="container-fluid pb-5 pt-5 d-none d-md-block" style="background-color: #F2F0FD;" id="footer">
+        <div class="row mx-auto" style="width: 75%;">
+            <div class="col">
+                <p class="fw-bold">O Akolja</p>
+                <a href="#" style="text-decoration: none;">
+                    <p class="mt-4">O nas</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Pracuj z nami</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Akolja w mediach</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Centrum prasowe</p>
+                </a>
+            </div>
+            <div class="col">
+                <p class="fw-bold">Dla pracowników</p>
+                <a href="#" style="text-decoration: none;">
+                    <p class="mt-4">Ofert pracy tymczasowej</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Najczęstsze pytania</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Blog</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Regulamin</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Kontakt</p>
+                </a>
+                <button type="button" class="btn"><span class="fw-bold">Logowanie dla pracowników</span></button>
+            </div>
+            <div class="col">
+                <p class="fw-bold">Dla firm</p>
+                <a href="#" style="text-decoration: none;">
+                    <p class="mt-4">Pracownicy na godziny</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Faq</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Blog</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Regulamin</p>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <p class="">Kontakt</p>
+                </a>
+                <button type="button" class="btn"><span class="fw-bold">Logowanie dla firm</span></button>
+            </div>
+            <div class="col">
+                <p style="font-size: 13px;">Należymy do grona firm członkowskich:</p>
+                <img src="assets/lewiatan.svg" alt="" class="mt-1"><br>
+                <img src="assets/nagrodahr.svg" alt="" class="mt-3">
+            </div>
+            <div class="col">
+                <p style="font-size: 13px;">Nagrody:</p>
+                <img src="assets/perla.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDOK FOOTER MOBILE -->
+
+    <div class="container-fluid d-md-none pt-5 pb-5" style="background-color: #F2F0FD; color: #172C45;">
+        <div class="row">
+            <div class="accordion" id="accordionExample" style="background-color: unset; border: none;">
+                <div class="accordion-item" style="background-color: unset; border: none;">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: unset; border: none;">
+                    <p class="fw-bold mb-0">O akolja</p>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href=""><p class="mb-0">O nas</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracuj z nami</p></a>
+                        <a href=""><p class="mb-0 mt-1">Akolja w mediach</p></a>
+                        <a href=""><p class="mb-0 mt-1">Centrum prasowe</p></a>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item" style="background-color: unset; border: none;">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: unset; border: none;">
+                        <p class="fw-bold mb-0">Dla pracowników</p>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href=""><p class="mb-0 mt-1">Oferta pracy tymczasowej</p></a>
+                        <a href=""><p class="mb-0 mt-1">Kontakt</p></a>
+                        <a href=""><p class="mb-0 mt-1">Aplikacja do szukania pracy</p></a>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item" style="background-color: unset; border: none;">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: unset; border: none;">
+                        <p class="fw-bold mb-0">Dla firm</p>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href=""><p class="mb-0">Pracownicy na godziny</p></a>
+                        <a href=""><p class="mb-0 mt-1">Regulamin</p></a>
+                        <a href=""><p class="mb-0 mt-1">Kontakt</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy produkcyjni</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy magazynowi</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy dla retail</p></a>
+                        <a href=""><p class="mb-0 mt-1">Pracownicy dla HoReCa</p></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button class="mx-auto mt-4 text-white fw-bold pt-2 pb-2" style="background-color: #FF4221; border: none; width: 50%;">Logowanie</button>
+        </div>
+        <div class="row mt-5">
+            <div class="col-4 mx-auto" style="border: 0px solid black;">
+                <p class="fw-bold" style="font-size: 12px;">Należymy do grona firm członkowskich:</p>
+                <img src="assets/nagrodahr.svg" width="80px"/>
+                <img src="assets/lewiatan.svg" class="mt-2" width="80px"/>
+            </div>
+            <div class="col-4 mx-auto" style="border: 0px solid black;">
+                <p class="fw-bold" style="font-size: 12px;">Nagrody:</p>
+                <img src="assets/perla.svg" width="80px"/>
+        </div>
+    </div>
+
+
+
+    <script>
+        window.addEventListener('scroll', (e) => {
+            const nav = document.querySelector('#header');
+            if (window.pageYOffset > 0) {
+                nav.classList.add("add-shadow");
+            } else {
+                nav.classList.remove("add-shadow");
+            }
+        });
+    </script>
+</body>
+
+</html>
