@@ -15,13 +15,13 @@
 }
 
 #footer button{
-    background-color: #FF4221;
+    background-color: #e6027d;
     border: none;
     color: white;
 }
 
 .navbar a{
-    color: black;
+    color: #e6027d;;
     text-decoration: none;
 }
 
@@ -46,6 +46,7 @@
     -webkit-box-shadow: 8px 0px 24px 0px rgba(66, 68, 90, 1);
 -moz-box-shadow: 8px 0px 24px 0px rgba(66, 68, 90, 1);
 box-shadow: 8px 0px 24px 0px rgba(66, 68, 90, 1);
+background-color: #fcf2f8;
 }
 
 .accordion a{
