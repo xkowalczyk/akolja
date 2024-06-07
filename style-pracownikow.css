@@ -88,6 +88,17 @@ background-color: #fcf2f8;
     color: white;
 }
 
+.accordion a{
+    text-decoration: none;
+    color: #172c45;
+}
+
+.accordion-body a{
+    font-size: 14px;
+    color: #172c45;
+    font-weight: 600;
+}
+
 .navbar a{
     color: black;
     text-decoration: none;
