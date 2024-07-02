@@ -184,4 +184,14 @@ function handleGesture() {
     }
 }
 
+setInterval(()=>{
+    if(SLIDER_INDEX == 2){
+        SLIDER_INDEX = 0;
+        changeSlideTo(0);
+    }else{
+        SLIDER_INDEX = SLIDER_INDEX+1;
+        changeSlideTo(SLIDER_INDEX);
+    }
+}, 5000)
+
 //
