@@ -1,17 +1,17 @@
 const sliderTable = [
     {
-        textHead: "Nowoczesna platforma",
-        textContent: "1. Po rozmowie kwalifikacyjnej tworzysz konto na platformie Akolja \n 2. Przeglądasz oferty pracy i zleceń. \n 3. Wybierasz i przyjmujesz zlecenie. \n 4. Ni etracisz czasu i cieszysz się zarobkiem.",
+        textHead: "",
+        textContent: "Rejestracja w kilka kliknięć. \n Po rozmowie online, decydujesz kiedy \n idziesz do pracy.",
         photo: "telefonbg.png"
     },
     {
-        textHead: "Korzystając z Akolji:",
-        textContent: "Decydujesz, jaki rodzaj pracy Ci odpowiada. \n Określasz, ile godzin możesz poświęcić na pracę. \n Od razu widzisz, ile dokładnie zarobisz.",
+        textHead: "",
+        textContent: "Dostęp do ofert pracy 24/7, które nie czekają. \n Kto pierwszy ten zarabia.",
         photo: "telefonbg.png"
     },
     {
-        textHead: "Dzięki naszemu systemowi:",
-        textContent: "Pracujesz, kiedy ci to odpowiada. \n Podnosisz kwalifikacje zawodowe. \n Co dwa tygodnie odbierasz wypłatę.",
+        textHead: "",
+        textContent: "Wszystkie formalności realizowane drogą online, \n wynagrodzenie co dwa tygodnie.",
         photo: "telefonbg.png"
     }
 ]
@@ -58,14 +58,12 @@ const changeSlideTo = (index) => {
     console.log("ss")
     switch(index){
         case 0:{
-            document.getElementById('slideTextHead').innerText = sliderTable[0].textHead;
             document.getElementById('slideTextContent').innerText = sliderTable[0].textContent;
             document.getElementById('slideImage').src="assets/"+sliderTable[0].photo;
             document.getElementsByClassName('c')[0].style.backgroundColor = "#FF4221";
             document.getElementsByClassName('c')[1].style.backgroundColor = "#D9D2FA";
             document.getElementsByClassName('c')[2].style.backgroundColor = "#D9D2FA";
 
-            document.getElementById('slideTextHeadM').innerText = sliderTable[0].textHead;
             document.getElementById('slideTextContentM').innerText = sliderTable[0].textContent;
             document.getElementById('slideImageM').src="assets/"+sliderTable[0].photo;
             document.getElementsByClassName('c')[3].style.backgroundColor = "#FF4221";
@@ -73,14 +71,12 @@ const changeSlideTo = (index) => {
             document.getElementsByClassName('c')[5].style.backgroundColor = "#D9D2FA";
         } break;
         case 1:{
-            document.getElementById('slideTextHead').innerText = sliderTable[1].textHead;
             document.getElementById('slideTextContent').innerText = sliderTable[1].textContent;
             document.getElementById('slideImage').src="assets/"+sliderTable[1].photo;
             document.getElementsByClassName('c')[1].style.backgroundColor = "#FF4221";
             document.getElementsByClassName('c')[0].style.backgroundColor = "#D9D2FA";
             document.getElementsByClassName('c')[2].style.backgroundColor = "#D9D2FA";
 
-            document.getElementById('slideTextHeadM').innerText = sliderTable[1].textHead;
             document.getElementById('slideTextContentM').innerText = sliderTable[1].textContent;
             document.getElementById('slideImageM').src="assets/"+sliderTable[1].photo;
             document.getElementsByClassName('c')[4].style.backgroundColor = "#FF4221";
@@ -88,14 +84,12 @@ const changeSlideTo = (index) => {
             document.getElementsByClassName('c')[5].style.backgroundColor = "#D9D2FA";
         } break;
         case 2:{
-            document.getElementById('slideTextHead').innerText = sliderTable[2].textHead;
             document.getElementById('slideTextContent').innerText = sliderTable[2].textContent;
             document.getElementById('slideImage').src="assets/"+sliderTable[2].photo;
             document.getElementsByClassName('c')[2].style.backgroundColor = "#FF4221";
             document.getElementsByClassName('c')[1].style.backgroundColor = "#D9D2FA";
             document.getElementsByClassName('c')[0].style.backgroundColor = "#D9D2FA";
 
-            document.getElementById('slideTextHeadM').innerText = sliderTable[2].textHead;
             document.getElementById('slideTextContentM').innerText = sliderTable[2].textContent;
             document.getElementById('slideImageM').src="assets/"+sliderTable[2].photo;
             document.getElementsByClassName('c')[5].style.backgroundColor = "#FF4221";
