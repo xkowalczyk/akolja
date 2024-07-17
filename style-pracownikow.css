@@ -4,6 +4,9 @@
   user-select: none; /* Standard syntax */
 }
 
+ul{
+    list-style-position: inside;
+}
 .navbar a{
     color: #172c45;
     text-decoration: none;
