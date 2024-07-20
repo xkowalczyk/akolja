@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akolja</title>
+    <title>Akolja - dla szukających pracy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -20,153 +20,139 @@
 </head>
 
 <body>
-    <!------------------------------WIDOK 0 NAVBAR ----------------------------------->
+   <!------------------------------WIDOK 0 NAVBAR ----------------------------------->
 
-    <nav class="navbar navbar-expand-lg pt-3 pb-3 d-none d-md-block" id="header">
-        <div class="container-fluid" style="color: #e6027d;">
-            <div class="row mx-auto" style="width: 70%;">
-                <div class="col-3">
-                    <a class="navbar-brand fw-bold fs-3 ps-2 pe-2" href="#"
-                        style="background-color: white; border-radius: 16px;">Akolja</a>
-                </div>
-                <div class="col-4 mx-auto">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold" aria-current="page" href="#"
-                                    style="background-color: white; border-radius: 16px;">Strona główna</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold me-1 ms-1" href="#"
-                                    style="background-color: white; border-radius: 16px; color: #FF4221;">Dla
-                                    pracownika</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold" href="#"
-                                    style=" font-weight: bold; background-color: white; border-radius: 16px;">Dla
-                                    firmy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-3 d-flex justify-content-center align-items-center"
-                    style="background-color: white; border-radius: 16px;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="8" r="5"></circle>
-                        <path d="M8 14H12H16V21H8V14Z"></path>
-                    </svg>
-                    <a href="" class="fw-bold fs-6 mb-0 ms-1">
-                        <p class="mb-0">Moje konto</p>
-                    </a>
-                    <button class="ms-3 p-1 ps-3 pe-3 fw-bold"
-                        style="background-color: #e6027d; border-radius: 16px; border: none; color: white;">793 330 631</button>
+   <nav class="navbar navbar-expand-lg pt-3 pb-3 d-none d-md-block" id="header">
+    <div class="container-fluid" style="color: #e6027d;">
+        <div class="row mx-auto" style="width: 70%;">
+            <div class="col-3" >
+                <a class="navbar-brand fw-bold fs-3 ps-2 pe-2" href="https://akolja.com" style="background-color: white; border-radius: 16px;">Akolja</a>
+            </div>
+            <div class="col-4 mx-auto">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="https://akolja.com" style="background-color: white; border-radius: 16px;">Strona główna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold me-1 ms-1" href="https://akolja.com/dla-pracownika" style="background-color: white; border-radius: 16px; color: #FF4221;">Dla pracownika</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="https://akolja.com/dla-pracodawcy" style="font-weight: bold; background-color: white; border-radius: 16px;">Dla firmy</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </nav>
 
-    <!-- WIDOK 0 NAVBAR MOBILE -->
-
-    <div class="container-fluid d-block d-md-none pb-3 pt-3" style="background-color: white;" id="header">
-
-        <div class="row">
-            <div class="col-3 d-flex">
-                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                    aria-controls="offcanvasExample" style="background-color: unset; border: none;">
-                    <img src="assets/burger-bar.png" width="30px" class="ms-auto" />
+            <div class="col-3 d-flex justify-content-center align-items-center" style="background-color: white; border-radius: 16px;">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="8" r="5"></circle>
+                    <path d="M8 14H12H16V21H8V14Z"></path>
+                </svg>
+                <a href="https://akolja.com/app" class="fw-bold fs-6 mb-0 ms-1">
+                    <p class="mb-0">Moje konto</p>
                 </a>
-                <p class="fw-bold align-self-center mb-0 mt-0 fs-2 ms-1">Akolja</p>
-            </div>
-
-            <div class="col-7 ms-auto me-1 d-flex">
-                <img src="assets/profile-user.png" class="align-self-center" width="30px" height="30px">
-                <a href="" class="ms-3 p-2 ps-3 pe-3 fw-bold"
-                    style="background-color: #e6027d; border-radius: 16px; border: none; text-decoration: none; color: #172C45;">793
-                    330 631</a>
-            </div>
-
-        </div>
-
-
-
-
-        <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel" style="background-color: #fcf2f8;">
-            <div class="row pt-3 pb-3" style="background-color: #fcf2f8;">
-                <div class="col-3 ms-2">
-                    <p class="fw-bold fs-2 ms-2 mb-0">Akolja</p>
-                </div>
-                <div class="col-2 ms-auto me-1">
-                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"
-                        style="background-color: unset; border: none;"><img src="assets/close.png" class="mt-auto"
-                            width="20px" /></button>
-                </div>
-            </div>
-            <div class="row p-3" style="background-color: white;">
-                <div class="col-6">
-                    <a href="" style="text-decoration: none;">
-                        <p class="fw-bold mb-0" style="color: #172C45;">O nas</p>
-                    </a>
-                </div>
-                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
-                    <img src="assets/fast-forward.png" alt="" width="15px">
-                </div>
-            </div>
-            <div class="row p-3" style="background-color: white;">
-                <div class="col-6">
-                    <a href="" style="text-decoration: none;">
-                        <p class="fw-bold mb-0" style="color: #172C45;">Dla szukających pracy</p>
-                    </a>
-                </div>
-                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
-                    <img src="assets/fast-forward.png" alt="" width="15px">
-                </div>
-            </div>
-
-            <div class="row p-3" style="background-color: white; border-radius: 15px;">
-                <div class="col-6">
-                    <a href="" style="text-decoration: none;">
-                        <p class="fw-bold mb-0" style="color: #172C45;">Dla firm</p>
-                    </a>
-                </div>
-                <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
-                    <img src="assets/fast-forward.png" alt="" width="15px">
-                </div>
-            </div>
-
-            <div class="row mt-2 p-3">
-                <a href="" style="text-decoration: none;">
-                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Kontakt dla firm</p>
-                </a>
-                <a href="" style="text-decoration: none;" class="mt-2">
-                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Kontakt dla pracownika</p>
-                </a>
-                <a href="" style="text-decoration: none;" class="mt-2">
-                    <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Moje konto</p>
-                </a>
-            </div>
-
-            <div class="flex-row d-flex mt-2 p-3">
-                <a href="">
-                    <img src="assets/facebook.png" width="30px">
-                </a>
-                <a href="" class="ms-2">
-                    <img src="assets/instagram.png" width="30px">
-                </a>
-                <a href="" class="ms-2">
-                    <img src="assets/linkedin.png" width="30px">
+                <a href="tel:793330631"><button class="ms-3 p-1 ps-3 pe-3 fw-bold"
+                    style="background-color: #e6027d; border-radius: 16px; border: none; color: white;">793 330 631</button>
                 </a>
             </div>
         </div>
     </div>
+</nav>
+
+<!-- WIDOK 0 NAVBAR MOBILE -->
+
+<div class="container-fluid d-block d-md-none pb-3 pt-3" style="background-color: white;" id="header">
+
+    <div class="row">
+        <div class="col-3 d-flex">
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample" style="background-color: unset; border: none;">
+                <img src="assets/burger-bar.png" width="30px" class="ms-auto"/>
+            </a>
+            <a href="https://akolja.com" style="text-decoration: none;"> <p class="fw-bold align-self-center mb-0 mt-0 fs-2 ms-1" style="color: #172C45;">Akolja</p></a>
+        </div>
+
+        <div class="col-7 ms-auto me-1 d-flex" style="justify-content: flex-end;">
+            <a href="https://akolja.com/app" style="display: flex; justify-content: center;"><img src="assets/profile-user.png" class="align-self-center" width="30px" height="30px"></a>
+            <a href="tel:793330631" class="ms-3 p-2 ps-3 pe-3 fw-bold" style="background-color: #e6027d; border-radius: 16px; border: none; text-decoration: none; color: white;">793 330 631</a>
+        </div>
+
+    </div>
+
+    <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: #fcf2f8;">
+        <div class="row pt-3 pb-3" style="background-color: #fcf2f8;">
+            <div class="col-3 ms-2">
+                <p class="fw-bold fs-2 ms-2 mb-0">Akolja</p>
+            </div>
+            <div class="col-2 ms-auto me-1">
+                <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: unset; border: none;"><img src="assets/close.png" class="mt-auto" width="20px"/></button>
+            </div>
+        </div>
+        <div class="row p-3" style="background-color: white;">
+            <div class="col-6" >
+                <a href="https://akolja.com/o-nas" style="text-decoration: none;">
+                    <p class="fw-bold mb-0" style="color: #172C45;">O nas</p>
+                </a>
+            </div>
+            <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                <img src="assets/fast-forward.png" alt="" width="15px">
+            </div>
+        </div>
+        <div class="row p-3" style="background-color: white;">
+            <div class="col-6" >
+                <a href="https://akolja.com/dla-pracownika" style="text-decoration: none;">
+                    <p class="fw-bold mb-0" style="color: #172C45;">Dla szukających pracy</p>
+                </a>
+            </div>
+            <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                <img src="assets/fast-forward.png" alt="" width="15px">
+            </div>
+        </div>
+
+        <div class="row p-3" style="background-color: white; border-radius: 15px;">
+            <div class="col-6" >
+                <a href="https://akolja.com/dla-pracodawcy" style="text-decoration: none;">
+                    <p class="fw-bold mb-0" style="color: #172C45;">Dla firm</p>
+                </a>
+            </div>
+            <div class="col-2 text-center ms-auto" style="border: 0px solid black;">
+                <img src="assets/fast-forward.png" alt="" width="15px">
+            </div>
+        </div>
+
+        <div class="row mt-2 p-3">
+            <a href="https://akolja.com/kontakt" style="text-decoration: none;">
+                <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Kontakt dla firm</p>
+            </a>
+            <a href="https://akolja.com/kontakt" style="text-decoration: none;" class="mt-2">
+                <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Kontakt dla pracownika</p>
+            </a>
+            <a href="https://akolja.com/app" style="text-decoration: none;" class="mt-2">
+                <p class="fw-bold mb-0" style="color: #172C45; font-size: 14px;">Moje konto</p>
+            </a>
+        </div>
+
+        <div class="flex-row d-flex mt-2 p-3">
+            <a href="https://www.facebook.com/akoljaapp">
+                <img src="assets/facebook.png" width="30px">
+            </a>
+            <a href="https://www.instagram.com/akolja.app" class="ms-2">
+                <img src="assets/instagram.png" width="30px">
+            </a>
+            <a href="" class="ms-2">
+                <img src="assets/linkedin.png" width="30px">
+            </a>
+        </div>
+    </div>
+</div>
 
     <!--WIDOK 1-->
 
     <div class="container mt-5 mb-5 d-none d-md-block text-center" id="swipeAreaMob">
         <div class="row" id="rowApp">
-            <div class="col-md-5 mt-5">
-                <p class="fw-bold fs-2" style="line-height: 1.2em;">Zacznij zarabiać od <br>zaraz wystarczy apka</p>
+            <div class="col-md-5 mt-5 ms-3">
+                <p class="fw-bold fs-1" style="line-height: 1.2em;">Zacznij zarabiać od <br>zaraz wystarczy apka</p>
                 <p class="fw-bold fs-4 mt-5" style="line-height: 1em;" id="slideTextHead">Dowolna praca <br>na dowolony
                     dzień.</p>
                 <p class="fs-6 mt-5" id="slideTextContent">Ty wybierasz konkretny dzień i <Br> miejsce pracy. Zlecenia
@@ -179,7 +165,7 @@
                 </div>
             </div>
             <div class="col-md-6 d-flex align-items-center"">
-                <img src=" assets/telefonbg.png" style="height: 500px;" class="mx-auto mt-0" id="slideImage">
+                <img src=" assets/telefonbg.png" style="height: 500px; padding-left: 20%;" class="mx-auto mt-0" id="slideImage">
             </div>
         </div>
     </div>
@@ -189,7 +175,7 @@
     <div class="container mt-5 mb-5 d-md-none text-center" id="swipeArea">
         <div class="row pt-4 pb-5" id="rowApp">
             <div class="col-md-5">
-                <p class="fw-bold fs-2" style="line-height: 1.2em;">Zacznij zarabiać od <br>zaraz wystarczy apka</p>
+                <p class="fw-bold fs-2 mt-3" style="line-height: 1.2em;">Zacznij zarabiać od <br>zaraz wystarczy apka</p>
                 <img src="assets/telefon.png" style="height: 320px;" class="mx-auto mt-4" id="slideImageM">
 
                 <p class="fw-bold fs-4 mt-5" style="line-height: 1em;" id="slideTextHeadM">Dowolna praca <br>na dowolony
@@ -367,37 +353,37 @@
 
     <!----------------------------- WIDOK 2 NOWY ------------------------------------------>
 
-    <div class="container-fluid pt-5 pb-5 d-none d-md-block" style="background-color: #fcf2f8; color: #172C45;">
+    <div class="container-fluid pt-5 pb-5 d-none d-md-block" style="background-color: #fcf2f8; color: #172C45; ">
         <div class="row text-center fs-1">
-            <p class="fw-bold fs-5">Korzystająć z Akolji zyskujesz</p>
-            <p class="fw-bold" style="color: #172C45;">Internetową platformę do szukania zleceń
+            <p class="fw-bold fs-5">Korzystając z Akolji zyskujesz</p>
+            <p class="fw-bold fs-1" style="color: #172C45;">Internetową platformę do szukania zleceń
             </p>
         </div>
-        <div class="row mt-5 mx-auto" style="width: 65%;">
+        <div class="row mt-5 mx-auto" style="width: 65%; font-size: 20px;">
             <div class="col-5 col-md-3 mx-auto text-center">
-                <img src="assets/48-hours.png" width="120px">
+                <img src="assets/48-hours.png" width="140px">
                 <p class="fw-bold mt-2">Rekrutacja online</p>
             </div>
             <div class="col-5 col-md-3 mx-auto text-center">
-                <img src="assets/motivated.png" width="120px">
+                <img src="assets/motivated.png" width="140px">
                 <p class="fw-bold mt-2">Konto na platormie <br> Akolja</p>
             </div>
             <div class="col-5 col-md-3 mx-auto text-center">
-                <img src="assets/touch-screen.png" width="120px">
+                <img src="assets/working.png" width="140px">
                 <p class="fw-bold mt-2">Decydujesz kiedy pracujesz</p>
             </div>
         </div>
-        <div class="row mt-5 mx-auto" style="width: 65%;">
+        <div class="row mt-5 mx-auto" style="width: 65%; font-size: 20px;">
             <div class="col-5 col-md-3 mx-auto text-center">
-                <img src="assets/invoice.png" width="120px">
+                <img src="assets/commission.png" width="140px">
                 <p class="fw-bold mt-2">Z góry ustalone godziny <br>i stawki</p>
             </div>
             <div class="col-5 col-md-3 mx-auto text-center">
-                <img src="assets/energy-management.png" width="120px">
+                <img src="assets/energy-management.png" width="140px">
                 <p class="fw-bold mt-2">Kliknij i zlecenie <br>jest twoje</p>
             </div>
             <div class="col-5 col-md-3 mx-auto text-center">
-                <img src="assets/report.png" width="120px">
+                <img src="assets/report.png" width="140px">
                 <p class="fw-bold mt-2">Co dwa tygodnie<br>wynagrodzenie</p>
             </div>
         </div>
@@ -407,8 +393,8 @@
 
     <div class="container-fluid pt-5 pb-5 d-block d-md-none" style="background-color: #fcf2f8; color: #172C45;">
         <div class="row text-center fs-1">
-            <p class="fw-bold fs-5">Korzystająć z Akolji zyskujesz</p>
-            <p class="fw-bold" style="color: #172C45;">Do szukania zleceń
+            <p class="fw-bold fs-5">Korzystając z Akolji zyskujesz</p>
+            <p class="fw-bold" style="color: #172C45;">Internetową platformę do szukania zleceń
             </p>
         </div>
         <div class="row mt-5 mx-auto" style="width: 95%;">
@@ -420,16 +406,18 @@
                 <img src="assets/motivated.png" width="120px">
                 <p class="fw-bold mt-2">Konto na platormie <br> Akolja</p>
             </div>
-            <div class="col-5 col-md-3 mx-auto text-center">
-                <img src="assets/touch-screen.png" width="120px">
-                <p class="fw-bold mt-2">Decydujesz kiedy pracujesz</p>
-            </div>
         </div>
         <div class="row mt-5 mx-auto" style="width: 95%;">
             <div class="col-5 col-md-3 mx-auto text-center">
-                <img src="assets/invoice.png" width="120px">
+                <img src="assets/working.png" width="120px">
+                <p class="fw-bold mt-2">Decydujesz kiedy pracujesz</p>
+            </div>
+            <div class="col-5 col-md-3 mx-auto text-center">
+                <img src="assets/commission.png" width="120px">
                 <p class="fw-bold mt-2">Z góry ustalone godziny <br>i stawki</p>
             </div>
+        </div>
+        <div class="row mt-5 mx-auto" style="width: 95%;">
             <div class="col-5 col-md-3 mx-auto text-center">
                 <img src="assets/energy-management.png" width="120px">
                 <p class="fw-bold mt-2">Kliknij i zlecenie <br>jest twoje</p>
@@ -438,7 +426,6 @@
                 <img src="assets/report.png" width="120px">
                 <p class="fw-bold mt-2">Co dwa tygodnie<br>wynagrodzenie</p>
             </div>
-
         </div>
     </div>
 
@@ -447,7 +434,7 @@
     <div class="container-fluid d-none d-md-block"
         style="background-color: white; padding-bottom: 5%; padding-top: 5%;">
         <div class="row mx-auto" style="width: 70%;">
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <div style="display: flex; justify-content: center;">
                     <dotlottie-player src="https://lottie.host/9cf88b56-caec-4f51-af6b-db7c469a4958/g2avuSFdLG.json"
                         background="transparent" speed="1" style="width: 300px; height: 300px;" loop
@@ -465,8 +452,8 @@
                         style="text-decoration: none; color: #172c45;">praca@akolja.com</a>
                 </p>
             </div>
-            <div class="col-md-6 h-50"
-                style="background-color: #fcf2f8; border-radius: 13px; margin-top: 17%; margin-bottom: auto;">
+            <div class="col-md-5 h-50"
+                style="background-color: #fcf2f8; border-radius: 13px; margin-top: 17%; margin-bottom: auto; margin-left: 7%;">
                 <div class="alert alert-success mt-5 alert-dismissible fade show" role="alert">
                     Wysłano (będzie ustawione po wysłaniu)
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -483,7 +470,7 @@
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                         Zapoznała/em się z treścią informacji o przetwarzaniu danych osobowych zawartych w
-                        <a target="_blank" href="https://akoja.com/polityka-prywatnosci"
+                        <a target="_blank" href="https://akolja.com/polityka-prywatnosci"
                             style="text-decoration: none; color: #172c45;" class="fw-bold">Polityce Prywatności</a> i
                         wyrażam zgodę na ich przetwarzanie w celu obsługi zgłoszenia. <span
                             class="text-danger fw-bold">*</span>
@@ -502,15 +489,15 @@
     <div class="container-fluid d-block d-md-none text-center"
         style="background-color: white; padding-bottom: 5%; padding-top: 5%;">
         <div class="row mx-auto" style="width: 90%;">
-            <div class="col-md-6 mb-3">
-                <div style="border: 1px solid black;">
+            <div class="col-md-6 mb-4">
+                <div style="display: flex; justify-content: center;">
                     <dotlottie-player src="https://lottie.host/9cf88b56-caec-4f51-af6b-db7c469a4958/g2avuSFdLG.json"
                         background="transparent" speed="1" style="width: 300px; height: 300px;" loop
                         autoplay></dotlottie-player>
                 </div>
                 <p class="fw-bold" style="line-height: 1.2em; font-size: 40px;">Myślisz, czy Akolja spełni Twoje<br>
                     oczekiwania?</p>
-                <p class="mt-4" style="font-size: 19px;">Akolja to rozwiązanie idealne dla osób, które szukają ofert
+                <p class="mt-5" style="font-size: 19px;">Akolja to rozwiązanie idealne dla osób, które szukają ofert
                     pozwalających im na pracę w elastycznych godzinach.</p>
                 <p class="mt-4" style="font-size: 19px;">Jesteśmy tu, aby rozwiać Twoje wątpliwości. Napisz do nas, a
                     chętnie odpowiemy na Twoje pytania.</p>
@@ -519,7 +506,7 @@
                         style="text-decoration: none; color: #172c45;">praca@akolja.com</a>
                 </p>
             </div>
-            <div class="col-md-6" style="background-color: #fcf2f8; border-radius: 13px; margin-top: 20%;">
+            <div class="col-md-6" style="background-color: #fcf2f8; border-radius: 13px; margin-top: 5%;">
                 <div class="mb-3 mt-5">
                     <input type="email" class="form-control" style="margin-top: 0%;" id="exampleFormControlInput1"
                         placeholder="Twój adres e-mail">
@@ -532,7 +519,7 @@
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                         Zapoznała/em się z treścią informacji o przetwarzaniu danych osobowych zawartych w
-                        <a target="_blank" href="https://akoja.com/polityka-prywatnosci"
+                        <a target="_blank" href="https://akolja.com/polityka-prywatnosci"
                             style="text-decoration: none; color: #172c45;" class="fw-bold">Polityce Prywatności</a> i
                         wyrażam zgodę na ich przetwarzanie w celu obsługi zgłoszenia. <span
                             class="text-danger fw-bold">*</span>
@@ -556,44 +543,44 @@
             </div>
             <div class="col">
                 <p class="fw-bold">O Akolja</p>
-                <a href="#" style="text-decoration: none;">
+                <a href="https://akolja.com/o-nas" style="text-decoration: none;">
                     <p class="mt-4">O nas</p>
                 </a>
-                <a href="#" style="text-decoration: none;">
+                <a href="https://akolja.com/kontakt" style="text-decoration: none;">
                     <p class="">Pracuj z nami</p>
                 </a>
             </div>
             <div class="col">
                 <p class="fw-bold">Dla pracowników</p>
-                <a href="#" style="text-decoration: none;">
+                <a href="https://akolja.com/dla-pracownika" style="text-decoration: none;">
                     <p class="mt-4">Ofert pracy tymczasowej</p>
                 </a>
-                <a href="#" style="text-decoration: none;">
+                <a href="https://akolja.com/faq" style="text-decoration: none;">
                     <p class="">Najczęstsze pytania</p>
                 </a>
                 <a href="#" style="text-decoration: none;">
                     <p class="">Blog</p>
                 </a>
                 <a href="#" style="text-decoration: none;">
-                    <p class="">Kontakt</p>
+                    <p class="https://akolja.com/kontakt">Kontakt</p>
                 </a>
-                <button type="button" class="btn"><span class="fw-bold">Logowanie dla pracowników</span></button>
+                <a href="https://akolja.com/app/auth#/login"><button type="button" class="btn"><span class="fw-bold">Logowanie dla pracowników</span></button></a>
             </div>
             <div class="col">
                 <p class="fw-bold">Dla firm</p>
-                <a href="#" style="text-decoration: none;">
+                <a href="https://akolja.com/dla-pracodawcy" style="text-decoration: none;">
                     <p class="mt-4">Pracownicy na godziny</p>
                 </a>
-                <a href="#" style="text-decoration: none;">
+                <a href="https://akolja.com/faq" style="text-decoration: none;">
                     <p class="">Faq</p>
                 </a>
                 <a href="#" style="text-decoration: none;">
                     <p class="">Blog</p>
                 </a>
-                <a href="#" style="text-decoration: none;">
+                <a href="https://akolja.com/kontakt" style="text-decoration: none;">
                     <p class="">Kontakt</p>
                 </a>
-                <button type="button" class="btn"><span class="fw-bold">Logowanie dla firm</span></button>
+                <a href="https://akolja.com/app/auth#/login"><button type="button" class="btn"><span class="fw-bold">Logowanie dla firm</span></button></a>
             </div>
             <div class="col">
 
@@ -616,10 +603,10 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <a href="">
+                            <a href="https://akolja.com/o-nas">
                                 <p class="mb-0">O nas</p>
                             </a>
-                            <a href="">
+                            <a href="https://akolja.com/kontakt">
                                 <p class="mb-0 mt-1">Pracuj z nami</p>
                             </a>
                         </div>
@@ -635,16 +622,16 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <a href="">
+                            <a href="https://akolja.com/dla-pracownika">
                                 <p class="mb-0 mt-1">Oferta pracy tymczasowej</p>
                             </a>
-                            <a href="">
+                            <a href="https://akolja.com/faq">
                                 <p class="mb-0 mt-1">Najczestsze pytania</p>
                             </a>
                             <a href="">
                                 <p class="mb-0 mt-1">Blog</p>
                             </a>
-                            <a href="">
+                            <a href="https://akolja.com/kontakt">
                                 <p class="mb-0 mt-1">Kontakt</p>
                             </a>
                         </div>
@@ -660,16 +647,16 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <a href="">
+                            <a href="https://akolja.com/dla-pracodawcy">
                                 <p class="mb-0">Pracownicy na godziny</p>
                             </a>
-                            <a href="">
+                            <a href="https://akolja.com/faq">
                                 <p class="mb-0 mt-1">FAQ</p>
                             </a>
                             <a href="">
                                 <p class="mb-0 mt-1">Blog</p>
                             </a>
-                            <a href="">
+                            <a href="https://akolja.com/kontakt">
                                 <p class="mb-0 mt-1">Kontakt</p>
                             </a>
                         </div>
@@ -678,11 +665,12 @@
             </div>
         </div>
         <div class="row mb-5">
-            <button class="mx-auto mt-4 text-white fw-bold pt-2 pb-2"
-                style="background-color: #e6027d; border: none; width: 50%;">Logowanie</button>
+            <a href="https://akolja.com/app/auth#/login" class="mt-4" style="display: flex; justify-content: center; text-decoration: none;">
+                <button class="text-white fw-bold pt-2 pb-2"
+                    style="background-color: #e6027d; border: none; width: 50%;">Logowanie</button>
+            </a>
         </div>
     </div>
-
 
 
     <script>
