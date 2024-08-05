@@ -2,17 +2,17 @@ const sliderTable = [
     {
         textHead: "Nowoczesna platforma",
         textContent: "<ul><li>Po rozmowie kwalifikacyjnej tworzysz konto na platformie Akolja</li><li>Przeglądasz oferty pracy i zleceń.</li> <li>Wybierasz i przyjmujesz zlecenie.</li><li> Nie tracisz czasu i cieszysz się zarobkiem.</li></ul>",
-        photo: "telefonbg.png"
+        photo: "teloferta.png"
     },
     {
         textHead: "Korzystając z Akolji",
         textContent: "<ul><li>Decydujesz, jaki rodzaj pracy Ci odpowiada. </li> <li> Określasz, ile godzin możesz poświęcić na pracę.</li> <li>Od razu widzisz, ile dokładnie zarobisz.</li></ul><br>",
-        photo: "telefonbg.png"
+        photo: "teloferta.png"
     },
     {
         textHead: "Dzięki naszemu systemowi",
         textContent: "<ul><li>Pracujesz, kiedy Ci to odpowiada.</li> <li>Podnosisz kwalifikacje zawodowe.</li> <li>Co dwa tygodnie odbierasz wypłatę.</li></ul><br>",
-        photo: "telefonbg.png"
+        photo: "teloferta.png"
     }
 ]
 
